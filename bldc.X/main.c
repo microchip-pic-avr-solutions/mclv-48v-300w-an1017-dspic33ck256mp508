@@ -194,9 +194,9 @@ void CNE_ISR(void)
     // Calculate Phase Advance Based on Actual Speed and MAX_PH_ADV define
     // The following assembly instruction perform the following formula
     // using fractional multiplication:
-//    // 
-//     PhaseAdvance = MAX_PH_ADV * mcappData.movingAvgFilterSpeed.avg;
-//    //
+    // 
+    // PhaseAdvance = MAX_PH_ADV * mcappData.movingAvgFilterSpeed.avg
+    //
 
     register int a_reg asm("A");
     a_reg = __builtin_mpy(_MAX_PH_ADV, mcappData.movingAvgFilterSpeed.avg, 0, 0, 0, 0, 0, 0);
