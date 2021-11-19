@@ -2,3 +2,7 @@
 	path = library-x2cscope
 	url = https://bitbucket.microchip.com/scm/mcu16ce/library-x2cscope.git
 	branch = develop
+[submodule "library-motor"]
+	path = library-motor
+	url = https://bitbucket.microchip.com/scm/mcu16ce/library-motor.git
+	branch = motor_lib-124
