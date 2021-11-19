@@ -1,0 +1,4 @@
+[submodule "library-x2cscope"]
+	path = library-x2cscope
+	url = https://bitbucket.microchip.com/scm/mcu16ce/library-x2cscope.git
+	branch = develop
