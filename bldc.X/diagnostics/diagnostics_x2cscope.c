@@ -41,7 +41,8 @@
 *
 *******************************************************************************/
 
-#include "../library/x2cscope/X2CScope.h"
+//#include "../library/x2cscope/X2CScope.h"
+#include "../../library-x2cscope/X2CScope.h"
 #include "../mcc_generated_files/uart1.h"
 #include <stdint.h>
 #define X2C_DATA __attribute__((section("x2cscope_data_buf")))
