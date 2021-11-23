@@ -19,7 +19,7 @@
             </sourceRootList>
             <confList>
                 <confElem>
-                    <name>default</name>
+                    <name>LVMC</name>
                     <type>2</type>
                 </confElem>
             </confList>
