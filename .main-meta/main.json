@@ -35,10 +35,9 @@
          }
       },
       "keywords":[
-         "pmsm",
-         "an1017",
-		 "hall sensor",
-		 "svm"
+         "UART",
+         "USB",
+		 "ADC"
       ]
    }
 }
