@@ -62,6 +62,7 @@ pipeline {
 				sh "git submodule update --init"
 				sh "ls -l"
 				sh "PWD"
+				sh "cd .."
             }
         }
         
