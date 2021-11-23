@@ -1,8 +1,0 @@
-[submodule "BLDC/bldc.X/library-motor"]
-	path = BLDC/bldc.X/library-motor
-	url = https://bitbucket.microchip.com/scm/mcu16ce/library-motor.git
-	branch = motor_lib-124
-[submodule "BLDC/bldc.X/library-x2cscope"]
-	path = BLDC/bldc.X/library-x2cscope
-	url = https://bitbucket.microchip.com/scm/mcu16ce/library-x2cscope.git
-	branch = tag-2.2.0
