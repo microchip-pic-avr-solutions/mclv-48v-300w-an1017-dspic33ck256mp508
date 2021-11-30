@@ -15,6 +15,7 @@
             <sourceRootList>
                 <sourceRootElem>.</sourceRootElem>
                 <sourceRootElem>../motor_control</sourceRootElem>
+                <sourceRootElem>../library-x2cscope</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

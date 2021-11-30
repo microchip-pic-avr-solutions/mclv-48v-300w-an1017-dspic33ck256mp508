@@ -54,8 +54,9 @@
 // Section: Included Files
 // *****************************************************************************
 #include <stdint.h>
-#include "library/mc-library/motor_control_declarations.h"
-#include "library/mc-library/motor_control_types.h"
+#include "../bldc.X/library-motor/motor_control_declarations.h"
+#include "../bldc.X/library-motor/motor_control_types.h"
+
 #include "peripherals.h"
 #include "measure.h"
 
