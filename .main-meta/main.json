@@ -35,14 +35,14 @@
          }
       },
 	  "peripherals":[
-         "TMR0",
-         "PWM",
-         "USB"
+         "ADC",
+		 "PWM",
+		 "TIMER"
       ],
       "keywords":[
-         "UART",
-         "USB",
-		 "ADC"
+         "Motor Control and Drive",
+         "Motor Control",
+		 "Permanent Magnet Synchronous Motors"
       ]
    }
 }
