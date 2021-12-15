@@ -10,7 +10,7 @@ The demonstration code uses 3 hall sensors from the motor to know the 6 states c
 ## APPLICATION FEATURES
 - <p style='text-align: justify;'>Sinusoidal current generation for controlling PMSM motor phases using Space Vector Modulation (SVM)</p>
 - <p style='text-align: justify;'>Synchronization of sinusoidal voltages to PMSM motor position</p>
-- <p style='text-align: justify;'>Closed-loop speed regulation using digital Proportional Integral Derivative (PID) control</p>
+- <p style='text-align: justify;'>Closed-loop speed regulation using digital Proportional Integral (PI) control</p>
 - <p style='text-align: justify;'>Phase advance operation for increased speed range</p>
 - <p style='text-align: justify;'>Fractional math operations performed by the DSP engine of the dsPIC® DSC</p>
 
@@ -41,7 +41,9 @@ for a specific mechanical load in the motor.</p>
 
 ## Hardware Connection and Running the Demo Code
 
-## Suggested Demonstration Requirements
+## Motor Control Application Firmware Required for the Demonstration
+To clone or download this application from Github, go to the [main page of this repository](https://github.com/microchip-pic-avr-solutions/lvmc-dspic33ck256mp508-an1017) and then click Clone button to clone this repository or download as zip file.
+
 ## Software Tools Used for Testing the firmware
 - MPLAB® X IDE v5.50 or later
 - MPLAB® XC16 Compiler v1.70
@@ -136,8 +138,6 @@ X2C - SCOPE is a MPLAB X IDE plugin that allows a developer to interact with an 
 ##  BASIC DEMONSTRATION
 ### Firmware Description
 <p style='text-align: justify;'>
-The firmware version required for the demonstration is mentioned under the section Motor Control Application Firmware Required for the Demonstration.</p>
-<p style='text-align: justify;'>
 This firmware is implemented to work on Microchip’s 16-bit Digital signal controller (dsPIC® DSC) dsPIC33CK256MP508. 
 For more information, see the dsPIC33CK256MP508 Family datasheet (DS70005349).</p>
 <p style='text-align: justify;'>
@@ -179,15 +179,15 @@ Follow below instructions step by step to setup and run the motor control demo a
  <p align = "center"><font size="2"> Figure 11  Phase advance set up
 </p>
 
-5. <p style='text-align: justify;'>Right click on the project bldc.X and select “Properties” to open its Project Properties Dialog. Click the “Conf: [default]” category to reveal the general project configuration information.</p>
+5. <p style='text-align: justify;'>Right click on the project bldc.X and select “Properties” to open its Project Properties Dialog. Click the “Conf: [LVMC]” category to reveal the general project configuration information.</p>
 
-    In the ‘Conf: [default]’ category window: 
+    In the ‘Conf: [LVMC]’ category window: 
     - Select the specific Compiler Toolchain from the available list of compilers. Please ensure MPLAB® XC16 Compiler supports the device dsPIC33CK256MP508. In this case “XC16(v1.70)” is selected. The compiler used for testing the firmware is listed in the section Software Tools Used for Testing the firmware.
     - Select the Hardware Tool to be used for programming and debugging. In this case, “MPLAB PKoB 4” is the selected programmer.
     - After selecting Hardware Tool and Compiler Toolchain, click button Apply
  
         <p align="center">
-        <img  src="images/Project_Properties settings.png"></p>
+        <img  src="images/projectpropertiessettings.png"></p>
         <p align = "center"><font size="2"> Figure 12  Project Properties settings
         </p>
 
