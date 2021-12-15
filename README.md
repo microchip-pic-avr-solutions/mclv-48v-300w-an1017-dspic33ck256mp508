@@ -25,7 +25,7 @@ Only detection of the required commutation instances is required.
 Figure 1 shows the three sensor outputs along with the corresponding voltage driving each motor winding.</p>
 
  <p align="center">
-  <img  src="images/Figure1.png"></p>
+  <img  src="images/figure1.png"></p>
  <p align = "center"> Figure 1  six-step commutation for trapezoidal BLDC motors
 </p> 
 <br />
@@ -34,7 +34,7 @@ Figure 1 shows the three sensor outputs along with the corresponding voltage dri
 for a specific mechanical load in the motor.</p>
 
  <p align="center">
-  <img  src="images/Figure2.png"></p>
+  <img  src="images/figure2.png"></p>
   <p align = "center">Figure 2 voltage generation for Sinusoidal BLDC motors
 </p>
   
@@ -42,10 +42,6 @@ for a specific mechanical load in the motor.</p>
 ## Hardware Connection and Running the Demo Code
 
 ## Suggested Demonstration Requirements
-Motor Control Application Firmware Required for the Demonstration
-- <https://bitbucket.microchip.com/projects/MCU16CE/repos/lvmc-dspic33ck256mp508-an1017>
-> **_NOTE:_**
-> In this document, hereinafter this firmware package is referred as firmware.
 ## Software Tools Used for Testing the firmware
 - MPLAB® X IDE v5.50 or later
 - MPLAB® XC16 Compiler v1.70
@@ -88,27 +84,27 @@ Motor Control Application Firmware Required for the Demonstration
 
 <br />
 <p align="center">
-  <img  src="images/LVMC_Sensored Connection diagram.png"></p>
+  <img  src="images/lvmcsensoredconnectiondiagram.png"></p>
  <p align = "center"><font size="2"> Figure 3  LVMC Sensored Connection diagram
 </p> 
 <p style='text-align: justify;'>
 3.	Plug in the 24V power supply to connector J1 or J2 provided on the dsPIC33CK Low Voltage Motor Control Board.</p>
 <br />
 <p align="center">
-  <img  src="images/LVMC_Power Supply Connector.png"></p>
+  <img  src="images/lvmcpowersupplyconnector.png"></p>
  <p align = "center"><font size="2"> Figure 4  LVMC Power Supply Connector
 </p> 
 <p style='text-align: justify;'>
 4.	The board has an on-board programmer ‘PICKIT™ On Board (PKOBv4)”, which can be used for programming or debugging dsPIC33CK256MP508 device. To use on-board programmer, connect a micro USB cable between Host PC and Connector J13 provided on the dsPIC33CK Low Voltage Motor Control Board.</p>
 <p align="center">
-  <img  src="images/LVMC_PKOB4.png"></p>
+  <img  src="images/lvmcpkob.png"></p>
  <p align = "center"><font size="2"> Figure 5  LVMC PKOB4
 </p> 
 <p style='text-align: justify;'>
 5.	Alternatively, connect the Microchip programmer/debugger MPLAB PICkit 4 In-Circuit De-bugger to the Connector J10 of the dsPIC33CK Low Voltage Motor Control Board as shown below and to the Host PC used for programming the device. Ensure that PICkit 4 is connected in correct orientation.</p>
 
 <p align="center">
-  <img  src="images/LVMC_Programming Connector.png"></p>
+  <img  src="images/lvmcprogrammingconnector.png"></p>
  <p align = "center"><font size="2"> Figure 6  LVMC Programming Connector
 </p> 
 <br />
@@ -132,7 +128,7 @@ X2C - SCOPE is a MPLAB X IDE plugin that allows a developer to interact with an 
 - Look for tool X2C - SCOPE under Tools>Embedded.
 
 <p align="center">
-  <img  src="images/X2C Scope Configuration.png"></p>
+  <img  src="images/x2cscopeconfiguration.png"></p>
  <p align = "center"><font size="2"> Figure 7  X2C Scope Configuration
 </p> 
 <br />
@@ -161,25 +157,25 @@ Follow below instructions step by step to setup and run the motor control demo a
 
 1. <p style='text-align: justify;'> Start MPLAB X IDE and open (File>Open Project) the project bldc.X with device selection dsPIC33CK256MP508.</p>
 <p align="center">
-  <img  src="images/IDE_Device selection.png"></p>
+  <img  src="images/idedeviceselection.png"></p>
  <p align = "center"><font size="2"> Figure 8  IDE Device selection
 </p> 
 
 2. <p style='text-align: justify;'>Set the project bldc.X as main project by right clicking on the project name and selecting “Set as Main Project” as shown. The project “bldc” will then appear in bold.</p>
  <p align="center">
-  <img  src="images/IDE_Project setup.png"></p>
+  <img  src="images/ideprojectsetup.png"></p>
  <p align = "center"><font size="2"> Figure 9  IDE Project setup
 </p> 
 	
 3. <p style='text-align: justify;'>	Open bldc_main.h (under bldc.X -> headerfiles) in the project bldc.X & define the OPENLOOP for Open Loop running & Undefine it for closed loop operation </p>
   <p align="center">
-  <img  src="images/Project_Open loop set up.png"></p>
+  <img  src="images/projectopenloopsetup.png"></p>
  <p align = "center"><font size="2"> Figure 10  Open loop set up
 </p> 
 
 4. <p style='text-align: justify;'>Comment out the #define PHASE_ADVANCE for above base speed applications </p>
   <p align="center">
-  <img  src="images/Project_Phase advance set up.png"></p>
+  <img  src="images/projectphase advancesetup.png"></p>
  <p align = "center"><font size="2"> Figure 11  Phase advance set up
 </p>
 
@@ -198,7 +194,7 @@ Follow below instructions step by step to setup and run the motor control demo a
 6. <p style='text-align: justify;'>	To build the project (in this case bldc.X) and program the device dsPIC33CK256MP508, click “Make and Program Device Main project” on the toolbar.</p>
 
   <p align="center">
-  <img  src="images/Device_Programming.png"></p>
+  <img  src="images/deviceprogramming.png"></p>
  <p align = "center"><font size="2"> Figure 13  Device Programming
 </p>
   
@@ -207,14 +203,14 @@ Follow below instructions step by step to setup and run the motor control demo a
 8. <p style='text-align: justify;'>		Run or Stop the motor by pressing the push button SW1. The function of the pushbutton SW1 (Run/Stop of the motor) is indicated by turning ON or OFF the LED1 (LD11).</p>
 
   <p align="center">
-  <img  src="images/Push buttons.png"></p>
+  <img  src="images/pushbuttons.png"></p>
  <p align = "center"><font size="2"> Figure 14  Push buttons
 </p>
  
 9. <p style='text-align: justify;'>	If desired, the motor speed can be varied using the potentiometer (labeled “POT1”).</p>
 
   <p align="center">
-  <img  src="images/Potentiometer.png"></p>
+  <img  src="images/potentiometer.png"></p>
  <p align = "center"><font size="2"> Figure 15  Potentiometer
 </p>
  
@@ -233,7 +229,7 @@ The application firmware comes with initialization required to interface Control
 2. <p style='text-align: justify;'>To utilize X2C communication for this demonstration, a micro-USB connection is required between Host PC and dsPIC33CK Low Voltage Motor Control Board. PKob 4 Connector J13 can be used to communicate between Host PC and dsPIC33CK Low Voltage Motor Control Board, alternatively Connect a micro-USB cable from your computer to the J6 connector of the dsPIC33CK Low Voltage Motor Control Board.</p>
 
  <p align="center">
-  <img  src="images/X2C_Interface.png"></p>
+  <img  src="images/x2cinterface.png"></p>
  <p align = "center"><font size="2"> Figure 16  X2C Interface
 </p>
 
@@ -242,54 +238,54 @@ The application firmware comes with initialization required to interface Control
 4.	<p style='text-align: justify;'>Build the project bldc.X. To do that right click on the project bldc.X and select “Clean and Build”.</p>
 
  <p align="center">
-  <img  src="images/Project_Clean&Build.png"></p>
+  <img  src="images/projectcleanandbuild.png"></p>
  <p align = "center"><font size="2"> Figure 17  Clean and Build
 </p>
  
 5.	<p style='text-align: justify;'>Please ensure that the checkbox “Load symbols when programming or building for pro-duction (slows process)” is checked, which is under the “Loading” category of the Project Properties window</p>
 
  <p align="center">
-  <img  src="images/Load Variables.png"></p>
+  <img  src="images/loadvariables.png"></p>
  <p align = "center"><font size="2"> Figure 18  Load Variables
 </p>
 
 6.	<p style='text-align: justify;'>To build the project (in this case bldc.X) and program the device dsPIC33CK256MP508, click “Make and Program Device Main project” on the toolbar.</p>
 
  <p align="center">
-  <img  src="images/Device_Programming.png"></p>
+  <img  src="images/deviceprogramming.png"></p>
  <p align = "center"><font size="2"> Figure 19  Device Programming
 </p>
 
 7.	<p style='text-align: justify;'>Open the X2C window by selecting Tools>Embedded>X2CScope.</p>
 
  <p align="center">
-  <img  src="images/X2C Selection.png"></p>
+  <img  src="images/x2cselection.png"></p>
  <p align = "center"><font size="2"> Figure 20  X2C Selection
 </p>
 
 8.	<p style='text-align: justify;'>Open the X2CScope Configuration window and in “Select project” menu, select bldc project as shown.</p>
 
  <p align="center">
-  <img  src="images/X2C Project selection.png"></p>
+  <img  src="images/x2cprojectselection.png"></p>
  <p align = "center"><font size="2"> Figure 21  X2C Project selection
 </p>
 
 9.	<p style='text-align: justify;'>Remote Communication needs to be established, as indicated in the following figure. Ensure the communication baud rate is set to 115200 as the same is set in the application firmware, while COM port used depends on the system settings. Refresh button lists the available COM Ports. Select the COM Port as per the connection.</p>
  <p align="center">
-  <img  src="images/X2C Connection setup.png"></p>
+  <img  src="images/x2cconnectionsetup.png"></p>
  <p align = "center"><font size="2"> Figure 22  X2C Connection setup
 </p>
 
 
 10.	<p style='text-align: justify;'>Once COM port detected, click on “Disconnected”, and it will be turn into “Connected”, if the link is established as programmed.</p>
   <p align="center">
-  <img  src="images/X2C Connection Button.png"></p>
+  <img  src="images/x2cconnectionbutton.png"></p>
  <p align = "center"><font size="2"> Figure 23  X2C Connection Button
 </p>
 
 11.	<p style='text-align: justify;'>Set the “Project Setup” as shown below and click “Set Values”. Set Scope sample time as interval at which X2CScopeUpdate() is called. In this application it is every 20kHz (50µs).</p>
  <p align="center">
-  <img  src="images/X2C Project Setup.png"></p>
+  <img  src="images/x2cprojectsetup.png"></p>
  <p align = "center"><font size="2"> Figure 24  X2C Project Setup
 </p>
 
@@ -297,7 +293,7 @@ The application firmware comes with initialization required to interface Control
 12.	<p style='text-align: justify;'>When the setup is established, click on open scope View (under sub window “Data Views”), this open Scope Window.</p>
 
  <p align="center">
-  <img  src="images/X2C Dataview.png"></p>
+  <img  src="images/x2cdataview.png"></p>
  <p align = "center"><font size="2"> Figure 25  X2C Dataview
 </p>    	     
 
@@ -306,14 +302,14 @@ The application firmware comes with initialization required to interface Control
     To view data plots continuously, uncheck Single-shot. When Single-shot is checked it captures the data once and stops. The Sample time factor value multiplied with Sample time determines the time difference between any two consecutive data points on the plot.
 
  <p align="center">
-  <img  src="images/X2C Datapoint selection.png"></p>
+  <img  src="images/x2cdatapointselection.png"></p>
  <p align = "center"><font size="2"> Figure 26  X2C Datapoint selection
 </p>
  
 
 14.	<p style='text-align: justify;'>Click on SAMPLE, then X2C scope window shows variables in real time, which is updated automatically.</p>
   <p align="center">
-  <img  src="images/X2C Sample.png"></p>
+  <img  src="images/x2csample.png"></p>
  <p align = "center"><font size="2"> Figure 27  X2C Sample
 </p>
 
@@ -321,7 +317,7 @@ The application firmware comes with initialization required to interface Control
 15.	<p style='text-align: justify;'>Click on ABORT to stop.</p>
 
  <p align="center">
-  <img  src="images/X2C Abort.png"></p>
+  <img  src="images/x2cabort.png"></p>
  <p align = "center"><font size="2"> Figure 28  X2C Abort
 </p>
 
