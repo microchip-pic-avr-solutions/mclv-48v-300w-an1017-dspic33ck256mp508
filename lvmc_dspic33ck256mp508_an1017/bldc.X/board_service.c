@@ -54,9 +54,9 @@
 // *****************************************************************************
 #include "board_service.h"
 //#include "measure.h"
-#include "../measure.h"
+#include "measure.h"
 //#include "peripherals.h"
-#include "../peripherals.h"
+#include "peripherals.h"
 #include "mcc_generated_files/pin_manager.h"
 
 BUTTON_T buttonStartStop;

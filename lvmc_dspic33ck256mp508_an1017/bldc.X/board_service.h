@@ -59,7 +59,7 @@
 #include <stdbool.h>
 #include <xc.h>
 //#include "measure.h"
-#include "../measure.h"
+#include "measure.h"
 #include "mcc_generated_files/sccp3_tmr.h"
 // *****************************************************************************
 // *****************************************************************************
