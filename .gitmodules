@@ -1,0 +1,4 @@
+[submodule "lvmc_dspic33ck256mp508_an1017/library/library-motor"]
+	path = lvmc_dspic33ck256mp508_an1017/library/library-motor
+	url = https://github.com/microchip-pic-avr-solutions/library-motor
+	branch = master
