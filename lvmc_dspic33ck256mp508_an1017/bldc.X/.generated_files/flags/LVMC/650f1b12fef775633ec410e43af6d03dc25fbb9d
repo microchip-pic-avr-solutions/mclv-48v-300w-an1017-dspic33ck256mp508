@@ -1,0 +1,1 @@
+ -c -mcpu=$(MP_PROCESSOR_OPTION)      -mno-eds-warn  -g -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"D:\Release task\lvmc_dspic33ck256mp508_an1017\lvmc_dspic33ck256mp508_an1017\bldc.X\mcc_generated_files\adc1.c
