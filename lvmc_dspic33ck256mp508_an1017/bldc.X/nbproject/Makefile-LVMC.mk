@@ -95,230 +95,230 @@ MP_LINKER_FILE_OPTION=,--script=p33CK256MP508.gld
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/diagnostics/diagnostics_x2cscope.o: diagnostics/diagnostics_x2cscope.c  .generated_files/flags/LVMC/ecc94259bcdb94dfb76e1b40225c65552da9fbe8 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/diagnostics/diagnostics_x2cscope.o: diagnostics/diagnostics_x2cscope.c  .generated_files/flags/LVMC/962cc4eb6a059e57e86c62d70dc4daaa2177b626 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/diagnostics" 
 	@${RM} ${OBJECTDIR}/diagnostics/diagnostics_x2cscope.o.d 
 	@${RM} ${OBJECTDIR}/diagnostics/diagnostics_x2cscope.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  diagnostics/diagnostics_x2cscope.c  -o ${OBJECTDIR}/diagnostics/diagnostics_x2cscope.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/diagnostics/diagnostics_x2cscope.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/reset.o: mcc_generated_files/reset.c  .generated_files/flags/LVMC/d2ad538088f905eecf059f18da5a37dc1d2c72cf .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/reset.o: mcc_generated_files/reset.c  .generated_files/flags/LVMC/7d17542d42543575f38ef21f6b45168ad6273622 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/reset.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/reset.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/reset.c  -o ${OBJECTDIR}/mcc_generated_files/reset.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/reset.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/system.o: mcc_generated_files/system.c  .generated_files/flags/LVMC/6c2a59bf07d2e45db4354547fa0a8c4cc4c3b8bc .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/system.o: mcc_generated_files/system.c  .generated_files/flags/LVMC/c1a9974c6aec14c016b60129f7d3e6fc0c089a49 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/system.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/system.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/system.c  -o ${OBJECTDIR}/mcc_generated_files/system.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/system.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/clock.o: mcc_generated_files/clock.c  .generated_files/flags/LVMC/6f6ef1337aa4b00392137e8645669d3aa9644ed6 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/clock.o: mcc_generated_files/clock.c  .generated_files/flags/LVMC/a7ad14fe9225a33354a2fe81511a17a0447ad9aa .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/clock.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/clock.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/clock.c  -o ${OBJECTDIR}/mcc_generated_files/clock.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/clock.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/traps.o: mcc_generated_files/traps.c  .generated_files/flags/LVMC/a3a1bc7ae4f468a1f60bf28e4361b83c0fa7fc4f .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/traps.o: mcc_generated_files/traps.c  .generated_files/flags/LVMC/ba00667795fb35ed77308b82bfbadf18d53d7bcd .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/traps.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/traps.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/traps.c  -o ${OBJECTDIR}/mcc_generated_files/traps.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/traps.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/interrupt_manager.o: mcc_generated_files/interrupt_manager.c  .generated_files/flags/LVMC/262edbd39d290ea8a3c53eb2c2ca8586a800f24f .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/interrupt_manager.o: mcc_generated_files/interrupt_manager.c  .generated_files/flags/LVMC/5384ac8cb161a22021913bf3138cd46dee72a23f .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/interrupt_manager.c  -o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/mcc.o: mcc_generated_files/mcc.c  .generated_files/flags/LVMC/75d0e81815ee6138a20b8bd98a9ee87a39bd250e .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/mcc.o: mcc_generated_files/mcc.c  .generated_files/flags/LVMC/c33b06bfe632c90dfb27838ea70e19c0f1b48261 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/mcc.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/mcc.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/mcc.c  -o ${OBJECTDIR}/mcc_generated_files/mcc.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/mcc.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/pin_manager.o: mcc_generated_files/pin_manager.c  .generated_files/flags/LVMC/56a38d9d1c1bf94c3d2ff8f7cd03d7081d097c92 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/pin_manager.o: mcc_generated_files/pin_manager.c  .generated_files/flags/LVMC/efd37056323734ee9af97dfea13272dc70f08812 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/pin_manager.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/pin_manager.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/pin_manager.c  -o ${OBJECTDIR}/mcc_generated_files/pin_manager.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/pin_manager.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/pwm.o: mcc_generated_files/pwm.c  .generated_files/flags/LVMC/ec4df5c9123638430b9bf023497830da709236b2 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/pwm.o: mcc_generated_files/pwm.c  .generated_files/flags/LVMC/556ff2c2ec2e665f270eb3f249518f7ba3e45351 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/pwm.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/pwm.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/pwm.c  -o ${OBJECTDIR}/mcc_generated_files/pwm.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/pwm.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/adc1.o: mcc_generated_files/adc1.c  .generated_files/flags/LVMC/b67af486bc83d9769c10b4f538977893ea98ab47 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/adc1.o: mcc_generated_files/adc1.c  .generated_files/flags/LVMC/643464861698b5fac8ff6ab4f3500a03f3fc84e6 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/adc1.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/adc1.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/adc1.c  -o ${OBJECTDIR}/mcc_generated_files/adc1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/adc1.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/uart1.o: mcc_generated_files/uart1.c  .generated_files/flags/LVMC/9f65464bb6b5d151dc7e6219b0eb55ad8b36f7ad .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/uart1.o: mcc_generated_files/uart1.c  .generated_files/flags/LVMC/e27a70a7547191b5ac20388d5f9ab334b281d810 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/uart1.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/uart1.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/uart1.c  -o ${OBJECTDIR}/mcc_generated_files/uart1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart1.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/sccp3_tmr.o: mcc_generated_files/sccp3_tmr.c  .generated_files/flags/LVMC/48e48ed1c4ac605eccc64d3f7d0c21602a7af5e3 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/sccp3_tmr.o: mcc_generated_files/sccp3_tmr.c  .generated_files/flags/LVMC/e80c28b172edf52677adb7b8e2449b269bb6d300 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/sccp3_tmr.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/sccp3_tmr.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/sccp3_tmr.c  -o ${OBJECTDIR}/mcc_generated_files/sccp3_tmr.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/sccp3_tmr.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/tmr1.o: mcc_generated_files/tmr1.c  .generated_files/flags/LVMC/d3ba5c6e3d2a308c5a70d3ac787dd1abc6b0591e .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/tmr1.o: mcc_generated_files/tmr1.c  .generated_files/flags/LVMC/ac81a88e315792cedf1c5df60b8559775ef63035 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/tmr1.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/tmr1.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/tmr1.c  -o ${OBJECTDIR}/mcc_generated_files/tmr1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/tmr1.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/cmp1.o: mcc_generated_files/cmp1.c  .generated_files/flags/LVMC/2607264cc56dc975067df0ea31176e97c5d1eac .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/cmp1.o: mcc_generated_files/cmp1.c  .generated_files/flags/LVMC/891949550b5544539b30fcebd4e58b682237b38f .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/cmp1.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/cmp1.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/cmp1.c  -o ${OBJECTDIR}/mcc_generated_files/cmp1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/cmp1.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/board_service.o: board_service.c  .generated_files/flags/LVMC/73a3b6e41d12d31fb00611ad76afec45208eb031 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/board_service.o: board_service.c  .generated_files/flags/LVMC/d43b6507952aec44ce8a8c9e39cbf9fcd06b0dbd .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/board_service.o.d 
 	@${RM} ${OBJECTDIR}/board_service.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  board_service.c  -o ${OBJECTDIR}/board_service.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/board_service.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/svm.o: svm.c  .generated_files/flags/LVMC/d88fd6a4f4a40106b74c55c29e31fad31638e8a2 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/svm.o: svm.c  .generated_files/flags/LVMC/ca3798e5c4838156f0319c2a7573d640dbca819a .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/svm.o.d 
 	@${RM} ${OBJECTDIR}/svm.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  svm.c  -o ${OBJECTDIR}/svm.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/svm.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/main.o: main.c  .generated_files/flags/LVMC/17fe68b12a975eecff8c6f9b872b93092c8a14ae .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/main.o: main.c  .generated_files/flags/LVMC/eccd06786bf9ef7d369583e5ac387fb086ea84d2 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main.o.d 
 	@${RM} ${OBJECTDIR}/main.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  main.c  -o ${OBJECTDIR}/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/main.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/cn_configure.o: cn_configure.c  .generated_files/flags/LVMC/1740133002f0fb2da6aa421f0a395feff33d4245 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/cn_configure.o: cn_configure.c  .generated_files/flags/LVMC/50757150a866616af015454221f3d501038d7485 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/cn_configure.o.d 
 	@${RM} ${OBJECTDIR}/cn_configure.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  cn_configure.c  -o ${OBJECTDIR}/cn_configure.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/cn_configure.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/adc_channel_config.o: adc_channel_config.c  .generated_files/flags/LVMC/4cc8ce6eaed6c81c3aab106d8c90bf284aaa5171 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/adc_channel_config.o: adc_channel_config.c  .generated_files/flags/LVMC/deadc647613e6dd327373050af1b37bd4cc026dd .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/adc_channel_config.o.d 
 	@${RM} ${OBJECTDIR}/adc_channel_config.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  adc_channel_config.c  -o ${OBJECTDIR}/adc_channel_config.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/adc_channel_config.o.d"      -g -D__DEBUG   -mno-eds-warn  -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
 else
-${OBJECTDIR}/diagnostics/diagnostics_x2cscope.o: diagnostics/diagnostics_x2cscope.c  .generated_files/flags/LVMC/70f0cbdb9563554dc3fc8da7fc2b19ea76ff59f6 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/diagnostics/diagnostics_x2cscope.o: diagnostics/diagnostics_x2cscope.c  .generated_files/flags/LVMC/3f2380bb0732b543fe3be109d5985c537dbf951f .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/diagnostics" 
 	@${RM} ${OBJECTDIR}/diagnostics/diagnostics_x2cscope.o.d 
 	@${RM} ${OBJECTDIR}/diagnostics/diagnostics_x2cscope.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  diagnostics/diagnostics_x2cscope.c  -o ${OBJECTDIR}/diagnostics/diagnostics_x2cscope.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/diagnostics/diagnostics_x2cscope.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/reset.o: mcc_generated_files/reset.c  .generated_files/flags/LVMC/a4ee6c8924e08b0a567bf730fd5e48f5d4d47e8d .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/reset.o: mcc_generated_files/reset.c  .generated_files/flags/LVMC/a2b211fdbd475b6475912bed4b1cce4e1bb28506 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/reset.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/reset.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/reset.c  -o ${OBJECTDIR}/mcc_generated_files/reset.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/reset.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/system.o: mcc_generated_files/system.c  .generated_files/flags/LVMC/ac94281d24b4fd49315ae36a5de37e2b111295ae .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/system.o: mcc_generated_files/system.c  .generated_files/flags/LVMC/dfc856e12c2a1bc1e1a8dad4099c735e1d6f9dde .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/system.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/system.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/system.c  -o ${OBJECTDIR}/mcc_generated_files/system.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/system.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/clock.o: mcc_generated_files/clock.c  .generated_files/flags/LVMC/d5331ad446e269ec8f550da93426f0e2b3971fd9 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/clock.o: mcc_generated_files/clock.c  .generated_files/flags/LVMC/6147724b47eb83ef340b666c95abb8814903ca3f .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/clock.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/clock.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/clock.c  -o ${OBJECTDIR}/mcc_generated_files/clock.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/clock.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/traps.o: mcc_generated_files/traps.c  .generated_files/flags/LVMC/700648c4933f848523622f04035b6bf04c3d8b0f .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/traps.o: mcc_generated_files/traps.c  .generated_files/flags/LVMC/9c8cdb7c45ddacb91698134412e5df16f19f79d0 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/traps.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/traps.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/traps.c  -o ${OBJECTDIR}/mcc_generated_files/traps.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/traps.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/interrupt_manager.o: mcc_generated_files/interrupt_manager.c  .generated_files/flags/LVMC/eccfd6c0bfe733fc8cb05b0ef236b87ad3333f27 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/interrupt_manager.o: mcc_generated_files/interrupt_manager.c  .generated_files/flags/LVMC/95b5553052b0ad688f4f16634270a2592d667b6c .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/interrupt_manager.c  -o ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/mcc.o: mcc_generated_files/mcc.c  .generated_files/flags/LVMC/bdef70758a071acb4afed4b66db719f280e30e77 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/mcc.o: mcc_generated_files/mcc.c  .generated_files/flags/LVMC/b594799df77d4234aa3eb6e46e7ada13cfd87e9b .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/mcc.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/mcc.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/mcc.c  -o ${OBJECTDIR}/mcc_generated_files/mcc.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/mcc.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/pin_manager.o: mcc_generated_files/pin_manager.c  .generated_files/flags/LVMC/aefc53a3eff5a5a169d7400b0712989119b2d34e .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/pin_manager.o: mcc_generated_files/pin_manager.c  .generated_files/flags/LVMC/a6439cc6400e2ca2b58da85ddc04527ba5ac3050 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/pin_manager.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/pin_manager.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/pin_manager.c  -o ${OBJECTDIR}/mcc_generated_files/pin_manager.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/pin_manager.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/pwm.o: mcc_generated_files/pwm.c  .generated_files/flags/LVMC/ca2a60fe123330ea805e3ff30028fea4a0c4b196 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/pwm.o: mcc_generated_files/pwm.c  .generated_files/flags/LVMC/ac9e34e378e4b5e584714658528d6d2e981a390d .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/pwm.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/pwm.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/pwm.c  -o ${OBJECTDIR}/mcc_generated_files/pwm.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/pwm.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/adc1.o: mcc_generated_files/adc1.c  .generated_files/flags/LVMC/cebb68f47af4ea8760f17e35f0ce8a84e69ea128 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/adc1.o: mcc_generated_files/adc1.c  .generated_files/flags/LVMC/650f1b12fef775633ec410e43af6d03dc25fbb9d .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/adc1.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/adc1.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/adc1.c  -o ${OBJECTDIR}/mcc_generated_files/adc1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/adc1.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/uart1.o: mcc_generated_files/uart1.c  .generated_files/flags/LVMC/cf0c8ef0f1600113d891a5610fab94b96c26b4c4 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/uart1.o: mcc_generated_files/uart1.c  .generated_files/flags/LVMC/a1155407c2fcb57bc4ddadf5f8513315a4a9a318 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/uart1.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/uart1.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/uart1.c  -o ${OBJECTDIR}/mcc_generated_files/uart1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/uart1.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/sccp3_tmr.o: mcc_generated_files/sccp3_tmr.c  .generated_files/flags/LVMC/a81bc9ec38c2e7d0408f6cf67983b8a68c97719d .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/sccp3_tmr.o: mcc_generated_files/sccp3_tmr.c  .generated_files/flags/LVMC/5f3b8ab75c7c5d81ce6caaf3f9460ba10a532303 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/sccp3_tmr.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/sccp3_tmr.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/sccp3_tmr.c  -o ${OBJECTDIR}/mcc_generated_files/sccp3_tmr.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/sccp3_tmr.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/tmr1.o: mcc_generated_files/tmr1.c  .generated_files/flags/LVMC/9bf42af424dd60cfb46d8118fcbbd1669a44aed9 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/tmr1.o: mcc_generated_files/tmr1.c  .generated_files/flags/LVMC/bf9dae7f1cf347ce75e18f41f2e8eaec7de42e7b .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/tmr1.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/tmr1.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/tmr1.c  -o ${OBJECTDIR}/mcc_generated_files/tmr1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/tmr1.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/mcc_generated_files/cmp1.o: mcc_generated_files/cmp1.c  .generated_files/flags/LVMC/7ce5027accc20a81b2d0bba72e9637b033a0c1bb .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/mcc_generated_files/cmp1.o: mcc_generated_files/cmp1.c  .generated_files/flags/LVMC/999bdc83ce23a6f9e2e44513aa9854e364812626 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}/mcc_generated_files" 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/cmp1.o.d 
 	@${RM} ${OBJECTDIR}/mcc_generated_files/cmp1.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/cmp1.c  -o ${OBJECTDIR}/mcc_generated_files/cmp1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/cmp1.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/board_service.o: board_service.c  .generated_files/flags/LVMC/a7ce0d5bef828d39ce1fc23bbc9921f4a670cfc2 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/board_service.o: board_service.c  .generated_files/flags/LVMC/14ee4509b8994bc460ffb8329a223e3df5a34bfa .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/board_service.o.d 
 	@${RM} ${OBJECTDIR}/board_service.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  board_service.c  -o ${OBJECTDIR}/board_service.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/board_service.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/svm.o: svm.c  .generated_files/flags/LVMC/a85c013c6acb95184ce3bfea6ed5ece0d2a8406d .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/svm.o: svm.c  .generated_files/flags/LVMC/d0a6a5944fde1348ee8213ac357bb49b623e9eb2 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/svm.o.d 
 	@${RM} ${OBJECTDIR}/svm.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  svm.c  -o ${OBJECTDIR}/svm.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/svm.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/main.o: main.c  .generated_files/flags/LVMC/3221222e7eb27b45c71d72568d5e381911750afd .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/main.o: main.c  .generated_files/flags/LVMC/4e20a4d8689597fc2845f6003d77b6ca6df5c731 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main.o.d 
 	@${RM} ${OBJECTDIR}/main.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  main.c  -o ${OBJECTDIR}/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/main.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/cn_configure.o: cn_configure.c  .generated_files/flags/LVMC/5b178385bfaa89ce9c4169c404410fc57e93a0d3 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/cn_configure.o: cn_configure.c  .generated_files/flags/LVMC/56a8ba7a10920096ff2c49d0b5169b30901bf20c .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/cn_configure.o.d 
 	@${RM} ${OBJECTDIR}/cn_configure.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  cn_configure.c  -o ${OBJECTDIR}/cn_configure.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/cn_configure.o.d"      -mno-eds-warn  -g -omf=elf -DXPRJ_LVMC=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -DMCLV2 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/adc_channel_config.o: adc_channel_config.c  .generated_files/flags/LVMC/1602a44a4b96e37e69c966bc5279de207df3b79c .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
+${OBJECTDIR}/adc_channel_config.o: adc_channel_config.c  .generated_files/flags/LVMC/69130ae63f140c6c86616971f04077cb8a8cbff8 .generated_files/flags/LVMC/c12406815e2379e320da63ac24bf94784d904add
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/adc_channel_config.o.d 
 	@${RM} ${OBJECTDIR}/adc_channel_config.o 
@@ -365,3 +365,11 @@ endif
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r build/LVMC
 	${RM} -r dist/LVMC
+
+# Enable dependency checking
+.dep.inc: .depcheck-impl
+
+DEPFILES=$(shell mplabwildcard ${POSSIBLE_DEPFILES})
+ifneq (${DEPFILES},)
+include ${DEPFILES}
+endif
