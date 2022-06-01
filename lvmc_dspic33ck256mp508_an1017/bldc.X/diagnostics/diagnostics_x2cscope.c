@@ -43,7 +43,7 @@
 
 //#include "../library/x2cscope/X2CScope.h"
 //#include "../library-x2cscope/X2CScope.h"
-#include "../../library/library-x2cscope/X2CScope.h"
+#include "X2CScope.h"
 //#include "../mcc_generated_files/uart1.h"
 #include "../mcc_generated_files/uart1.h"
 #include <stdint.h>
