@@ -3,9 +3,9 @@
   <projectmakefile>Makefile</projectmakefile>
   <defaultConf>0</defaultConf>
   <confs>
-    <conf name="LVMC" type="2">
-      <platformToolSN></platformToolSN>
-      <languageToolchainDir>C:\Program Files\Microchip\xc16\v1.70\bin</languageToolchainDir>
+    <conf name="default" type="2">
+      <platformToolSN>noToolString</platformToolSN>
+      <languageToolchainDir>C:\Program Files\Microchip\xc16\v2.00\bin</languageToolchainDir>
       <mdbdebugger version="1">
         <placeholder1>place holder 1</placeholder1>
         <placeholder2>place holder 2</placeholder2>

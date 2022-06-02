@@ -8,18 +8,20 @@
         <itemPath>diagnostics/diagnostics.h</itemPath>
       </logicalFolder>
       <logicalFolder name="library" displayName="library" projectFiles="true">
-        <logicalFolder name="mc-library" displayName="mc-library" projectFiles="true">
-          <itemPath>library/mc-library/motor_control.h</itemPath>
-          <itemPath>library/mc-library/motor_control_declarations.h</itemPath>
-          <itemPath>library/mc-library/motor_control_dsp.h</itemPath>
-          <itemPath>library/mc-library/motor_control_inline_declarations.h</itemPath>
-          <itemPath>library/mc-library/motor_control_inline_dspic.h</itemPath>
-          <itemPath>library/mc-library/motor_control_inline_internal.h</itemPath>
-          <itemPath>library/mc-library/motor_control_types.h</itemPath>
-          <itemPath>library/mc-library/motor_control_util.h</itemPath>
+        <logicalFolder name="library-motor" displayName="motor" projectFiles="true">
+          <itemPath>../library/library-motor/motor_control.h</itemPath>
+          <itemPath>../library/library-motor/motor_control_declarations.h</itemPath>
+          <itemPath>../library/library-motor/motor_control_dsp.h</itemPath>
+          <itemPath>../library/library-motor/motor_control_inline_declarations.h</itemPath>
+          <itemPath>../library/library-motor/motor_control_inline_dspic.h</itemPath>
+          <itemPath>../library/library-motor/motor_control_inline_internal.h</itemPath>
+          <itemPath>../library/library-motor/motor_control_types.h</itemPath>
+          <itemPath>../library/library-motor/motor_control_util.h</itemPath>
         </logicalFolder>
-        <logicalFolder name="x2cscope" displayName="x2cscope" projectFiles="true">
-          <itemPath>library/x2cscope/X2CScope.h</itemPath>
+        <logicalFolder name="library-x2cscope"
+                       displayName="x2cscope"
+                       projectFiles="true">
+          <itemPath>../library/library-x2cscope/X2CScope.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="MCC Generated Files"
@@ -95,10 +97,12 @@
     <Elem>.</Elem>
     <Elem>../motor_control</Elem>
     <Elem>../library-x2cscope</Elem>
+    <Elem>../library/library-motor</Elem>
+    <Elem>../library/library-x2cscope</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
-    <conf name="LVMC" type="2">
+    <conf name="default" type="2">
       <toolsSet>
         <developmentServer>localhost</developmentServer>
         <targetDevice>dsPIC33CK256MP508</targetDevice>
@@ -106,7 +110,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>noID</platformTool>
         <languageToolchain>XC16</languageToolchain>
-        <languageToolchainVersion>1.70</languageToolchainVersion>
+        <languageToolchainVersion>2.00</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
@@ -117,8 +121,6 @@
       <compileType>
         <linkerTool>
           <linkerLibItems>
-            <linkerLibFileItem>../library/library-motor/libmotor_control_dspic-elf.a</linkerLibFileItem>
-            <linkerLibFileItem>../library/library-x2cscope/libx2cscope-generic-dspic-elf.a</linkerLibFileItem>
           </linkerLibItems>
         </linkerTool>
         <archiverTool>
@@ -142,6 +144,7 @@
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
       <C30>
+        <property key="cast-align" value="false"/>
         <property key="code-model" value="default"/>
         <property key="const-model" value="default"/>
         <property key="data-model" value="default"/>
@@ -157,7 +160,8 @@
         <property key="enable-symbols" value="true"/>
         <property key="enable-unroll-loops" value="false"/>
         <property key="expand-pragma-config" value="false"/>
-        <property key="extra-include-directories" value=""/>
+        <property key="extra-include-directories"
+                  value="..\;diagnostics;mcc_generated_files;..\library\library-motor;..\library\library-x2cscope"/>
         <property key="isolate-each-function" value="false"/>
         <property key="keep-inline" value="false"/>
         <property key="oXC16gcc-align-arr" value="false"/>
@@ -219,7 +223,8 @@
         <property key="enable-default-isr" value="true"/>
         <property key="enable-handles" value="true"/>
         <property key="enable-pack-data" value="true"/>
-        <property key="extra-lib-directories" value=""/>
+        <property key="extra-lib-directories"
+                  value="..\library\library-motor;..\library\library-x2cscope"/>
         <property key="fill-flash-options-addr" value=""/>
         <property key="fill-flash-options-const" value=""/>
         <property key="fill-flash-options-how" value="0"/>
@@ -231,7 +236,8 @@
         <property key="general-write-protect" value="no_write_protect"/>
         <property key="generate-cross-reference-file" value="false"/>
         <property key="heap-size" value=""/>
-        <property key="input-libraries" value=""/>
+        <property key="input-libraries"
+                  value="q;motor_control_dspic;x2cscope-generic-dspic"/>
         <property key="linker-stack" value="true"/>
         <property key="linker-symbols" value=""/>
         <property key="map-file" value="${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"/>
@@ -255,6 +261,7 @@
         <property key="warn-section-align" value="false"/>
       </C30-LD>
       <C30Global>
+        <property key="combine-sourcefiles" value="false"/>
         <property key="common-include-directories" value=""/>
         <property key="dual-boot-partition" value="0"/>
         <property key="fast-math" value="false"/>
