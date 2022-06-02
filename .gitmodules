@@ -1,8 +1,0 @@
-[submodule "lvmc_dspic33ck256mp508_an1017/library/library-motor"]
-	path = lvmc_dspic33ck256mp508_an1017/library/library-motor
-	url = https://github.com/microchip-pic-avr-solutions/library-motor
-	branch = master
-[submodule "lvmc_dspic33ck256mp508_an1017/library/library-x2cscope"]
-	path = lvmc_dspic33ck256mp508_an1017/library/library-x2cscope
-	url = https://github.com/microchip-pic-avr-solutions/library-x2cscope
-	branch = master
