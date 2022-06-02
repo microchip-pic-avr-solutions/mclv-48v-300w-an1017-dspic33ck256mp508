@@ -8,9 +8,7 @@
         <itemPath>diagnostics/diagnostics.h</itemPath>
       </logicalFolder>
       <logicalFolder name="library" displayName="library" projectFiles="true">
-        <logicalFolder name="library-motor"
-                       displayName="library-motor"
-                       projectFiles="true">
+        <logicalFolder name="library-motor" displayName="motor" projectFiles="true">
           <itemPath>../library/library-motor/motor_control.h</itemPath>
           <itemPath>../library/library-motor/motor_control_declarations.h</itemPath>
           <itemPath>../library/library-motor/motor_control_dsp.h</itemPath>
@@ -21,7 +19,7 @@
           <itemPath>../library/library-motor/motor_control_util.h</itemPath>
         </logicalFolder>
         <logicalFolder name="library-x2cscope"
-                       displayName="library-x2cscope"
+                       displayName="x2cscope"
                        projectFiles="true">
           <itemPath>../library/library-x2cscope/X2CScope.h</itemPath>
         </logicalFolder>
