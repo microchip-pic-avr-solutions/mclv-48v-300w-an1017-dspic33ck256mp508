@@ -64,17 +64,17 @@ void PIN_MANAGER_Initialize (void)
     LATA = 0x0000;
     LATB = 0x0000;
     LATC = 0x0000;
-    LATD = 0x2040;
+    LATD = 0x2000;
     LATE = 0x0000;
 
     /****************************************************************************
      * Setting the GPIO Direction SFR(s)
      ***************************************************************************/
     TRISA = 0x001F;
-    TRISB = 0x0FFD;
+    TRISB = 0x03FD;
     TRISC = 0xFFFF;
-    TRISD = 0xDFFC;
-    TRISE = 0xFF2F;
+    TRISD = 0xBFFF;
+    TRISE = 0xCFEF;
 
     /****************************************************************************
      * Setting the Weak Pull Up and Weak Pull Down SFR(s)
@@ -113,8 +113,8 @@ void PIN_MANAGER_Initialize (void)
      ***************************************************************************/
     __builtin_write_RPCON(0x0000); // unlock PPS
 
-    RPOR22bits.RP77R = 0x0001;    //RD13->UART1:U1TX
-    RPINR18bits.U1RXR = 0x004E;    //RD14->UART1:U1RX
+    RPINR18bits.U1RXR = 0x004D;    //RD13->UART1:U1RX
+    RPOR23bits.RP78R = 0x0001;    //RD14->UART1:U1TX
 
     __builtin_write_RPCON(0x0800); // lock PPS
 }

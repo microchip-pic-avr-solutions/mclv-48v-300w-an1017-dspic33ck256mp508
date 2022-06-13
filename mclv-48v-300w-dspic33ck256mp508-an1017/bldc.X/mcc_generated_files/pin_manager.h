@@ -56,6 +56,444 @@
 */
 /**
   @Summary
+    Sets the GPIO pin, RD5, high using LATD5.
+
+  @Description
+    Sets the GPIO pin, RD5, high using LATD5.
+
+  @Preconditions
+    The RD5 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Set RD5 high (1)
+    HALLA_BIT_SetHigh();
+    </code>
+
+*/
+#define HALLA_BIT_SetHigh()          (_LATD5 = 1)
+/**
+  @Summary
+    Sets the GPIO pin, RD5, low using LATD5.
+
+  @Description
+    Sets the GPIO pin, RD5, low using LATD5.
+
+  @Preconditions
+    The RD5 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Set RD5 low (0)
+    HALLA_BIT_SetLow();
+    </code>
+
+*/
+#define HALLA_BIT_SetLow()           (_LATD5 = 0)
+/**
+  @Summary
+    Toggles the GPIO pin, RD5, using LATD5.
+
+  @Description
+    Toggles the GPIO pin, RD5, using LATD5.
+
+  @Preconditions
+    The RD5 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Toggle RD5
+    HALLA_BIT_Toggle();
+    </code>
+
+*/
+#define HALLA_BIT_Toggle()           (_LATD5 ^= 1)
+/**
+  @Summary
+    Reads the value of the GPIO pin, RD5.
+
+  @Description
+    Reads the value of the GPIO pin, RD5.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    uint16_t portValue;
+
+    // Read RD5
+    postValue = HALLA_BIT_GetValue();
+    </code>
+
+*/
+#define HALLA_BIT_GetValue()         _RD5
+/**
+  @Summary
+    Configures the GPIO pin, RD5, as an input.
+
+  @Description
+    Configures the GPIO pin, RD5, as an input.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Sets the RD5 as an input
+    HALLA_BIT_SetDigitalInput();
+    </code>
+
+*/
+#define HALLA_BIT_SetDigitalInput()  (_TRISD5 = 1)
+/**
+  @Summary
+    Configures the GPIO pin, RD5, as an output.
+
+  @Description
+    Configures the GPIO pin, RD5, as an output.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Sets the RD5 as an output
+    HALLA_BIT_SetDigitalOutput();
+    </code>
+
+*/
+#define HALLA_BIT_SetDigitalOutput() (_TRISD5 = 0)
+/**
+  @Summary
+    Sets the GPIO pin, RD6, high using LATD6.
+
+  @Description
+    Sets the GPIO pin, RD6, high using LATD6.
+
+  @Preconditions
+    The RD6 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Set RD6 high (1)
+    HALLB_BIT_SetHigh();
+    </code>
+
+*/
+#define HALLB_BIT_SetHigh()          (_LATD6 = 1)
+/**
+  @Summary
+    Sets the GPIO pin, RD6, low using LATD6.
+
+  @Description
+    Sets the GPIO pin, RD6, low using LATD6.
+
+  @Preconditions
+    The RD6 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Set RD6 low (0)
+    HALLB_BIT_SetLow();
+    </code>
+
+*/
+#define HALLB_BIT_SetLow()           (_LATD6 = 0)
+/**
+  @Summary
+    Toggles the GPIO pin, RD6, using LATD6.
+
+  @Description
+    Toggles the GPIO pin, RD6, using LATD6.
+
+  @Preconditions
+    The RD6 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Toggle RD6
+    HALLB_BIT_Toggle();
+    </code>
+
+*/
+#define HALLB_BIT_Toggle()           (_LATD6 ^= 1)
+/**
+  @Summary
+    Reads the value of the GPIO pin, RD6.
+
+  @Description
+    Reads the value of the GPIO pin, RD6.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    uint16_t portValue;
+
+    // Read RD6
+    postValue = HALLB_BIT_GetValue();
+    </code>
+
+*/
+#define HALLB_BIT_GetValue()         _RD6
+/**
+  @Summary
+    Configures the GPIO pin, RD6, as an input.
+
+  @Description
+    Configures the GPIO pin, RD6, as an input.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Sets the RD6 as an input
+    HALLB_BIT_SetDigitalInput();
+    </code>
+
+*/
+#define HALLB_BIT_SetDigitalInput()  (_TRISD6 = 1)
+/**
+  @Summary
+    Configures the GPIO pin, RD6, as an output.
+
+  @Description
+    Configures the GPIO pin, RD6, as an output.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Sets the RD6 as an output
+    HALLB_BIT_SetDigitalOutput();
+    </code>
+
+*/
+#define HALLB_BIT_SetDigitalOutput() (_TRISD6 = 0)
+/**
+  @Summary
+    Sets the GPIO pin, RD7, high using LATD7.
+
+  @Description
+    Sets the GPIO pin, RD7, high using LATD7.
+
+  @Preconditions
+    The RD7 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Set RD7 high (1)
+    HALLC_BIT_SetHigh();
+    </code>
+
+*/
+#define HALLC_BIT_SetHigh()          (_LATD7 = 1)
+/**
+  @Summary
+    Sets the GPIO pin, RD7, low using LATD7.
+
+  @Description
+    Sets the GPIO pin, RD7, low using LATD7.
+
+  @Preconditions
+    The RD7 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Set RD7 low (0)
+    HALLC_BIT_SetLow();
+    </code>
+
+*/
+#define HALLC_BIT_SetLow()           (_LATD7 = 0)
+/**
+  @Summary
+    Toggles the GPIO pin, RD7, using LATD7.
+
+  @Description
+    Toggles the GPIO pin, RD7, using LATD7.
+
+  @Preconditions
+    The RD7 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Toggle RD7
+    HALLC_BIT_Toggle();
+    </code>
+
+*/
+#define HALLC_BIT_Toggle()           (_LATD7 ^= 1)
+/**
+  @Summary
+    Reads the value of the GPIO pin, RD7.
+
+  @Description
+    Reads the value of the GPIO pin, RD7.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    uint16_t portValue;
+
+    // Read RD7
+    postValue = HALLC_BIT_GetValue();
+    </code>
+
+*/
+#define HALLC_BIT_GetValue()         _RD7
+/**
+  @Summary
+    Configures the GPIO pin, RD7, as an input.
+
+  @Description
+    Configures the GPIO pin, RD7, as an input.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Sets the RD7 as an input
+    HALLC_BIT_SetDigitalInput();
+    </code>
+
+*/
+#define HALLC_BIT_SetDigitalInput()  (_TRISD7 = 1)
+/**
+  @Summary
+    Configures the GPIO pin, RD7, as an output.
+
+  @Description
+    Configures the GPIO pin, RD7, as an output.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Sets the RD7 as an output
+    HALLC_BIT_SetDigitalOutput();
+    </code>
+
+*/
+#define HALLC_BIT_SetDigitalOutput() (_TRISD7 = 0)
+/**
+  @Summary
     Sets the GPIO pin, RE10, high using LATE10.
 
   @Description
@@ -73,11 +511,11 @@
   @Example
     <code>
     // Set RE10 high (1)
-    HALLC_BIT_SetHigh();
+    BUTTON_START_STOP_MCLV_SetHigh();
     </code>
 
 */
-#define HALLC_BIT_SetHigh()          (_LATE10 = 1)
+#define BUTTON_START_STOP_MCLV_SetHigh()          (_LATE10 = 1)
 /**
   @Summary
     Sets the GPIO pin, RE10, low using LATE10.
@@ -97,11 +535,11 @@
   @Example
     <code>
     // Set RE10 low (0)
-    HALLC_BIT_SetLow();
+    BUTTON_START_STOP_MCLV_SetLow();
     </code>
 
 */
-#define HALLC_BIT_SetLow()           (_LATE10 = 0)
+#define BUTTON_START_STOP_MCLV_SetLow()           (_LATE10 = 0)
 /**
   @Summary
     Toggles the GPIO pin, RE10, using LATE10.
@@ -121,11 +559,11 @@
   @Example
     <code>
     // Toggle RE10
-    HALLC_BIT_Toggle();
+    BUTTON_START_STOP_MCLV_Toggle();
     </code>
 
 */
-#define HALLC_BIT_Toggle()           (_LATE10 ^= 1)
+#define BUTTON_START_STOP_MCLV_Toggle()           (_LATE10 ^= 1)
 /**
   @Summary
     Reads the value of the GPIO pin, RE10.
@@ -147,11 +585,11 @@
     uint16_t portValue;
 
     // Read RE10
-    postValue = HALLC_BIT_GetValue();
+    postValue = BUTTON_START_STOP_MCLV_GetValue();
     </code>
 
 */
-#define HALLC_BIT_GetValue()         _RE10
+#define BUTTON_START_STOP_MCLV_GetValue()         _RE10
 /**
   @Summary
     Configures the GPIO pin, RE10, as an input.
@@ -171,11 +609,11 @@
   @Example
     <code>
     // Sets the RE10 as an input
-    HALLC_BIT_SetDigitalInput();
+    BUTTON_START_STOP_MCLV_SetDigitalInput();
     </code>
 
 */
-#define HALLC_BIT_SetDigitalInput()  (_TRISE10 = 1)
+#define BUTTON_START_STOP_MCLV_SetDigitalInput()  (_TRISE10 = 1)
 /**
   @Summary
     Configures the GPIO pin, RE10, as an output.
@@ -195,11 +633,11 @@
   @Example
     <code>
     // Sets the RE10 as an output
-    HALLC_BIT_SetDigitalOutput();
+    BUTTON_START_STOP_MCLV_SetDigitalOutput();
     </code>
 
 */
-#define HALLC_BIT_SetDigitalOutput() (_TRISE10 = 0)
+#define BUTTON_START_STOP_MCLV_SetDigitalOutput() (_TRISE10 = 0)
 /**
   @Summary
     Sets the GPIO pin, RE11, high using LATE11.
@@ -219,11 +657,11 @@
   @Example
     <code>
     // Set RE11 high (1)
-    BUTTON_START_STOP_MCLV_SetHigh();
+    BUTTON_FWD_REV_SetHigh();
     </code>
 
 */
-#define BUTTON_START_STOP_MCLV_SetHigh()          (_LATE11 = 1)
+#define BUTTON_FWD_REV_SetHigh()          (_LATE11 = 1)
 /**
   @Summary
     Sets the GPIO pin, RE11, low using LATE11.
@@ -243,11 +681,11 @@
   @Example
     <code>
     // Set RE11 low (0)
-    BUTTON_START_STOP_MCLV_SetLow();
+    BUTTON_FWD_REV_SetLow();
     </code>
 
 */
-#define BUTTON_START_STOP_MCLV_SetLow()           (_LATE11 = 0)
+#define BUTTON_FWD_REV_SetLow()           (_LATE11 = 0)
 /**
   @Summary
     Toggles the GPIO pin, RE11, using LATE11.
@@ -267,11 +705,11 @@
   @Example
     <code>
     // Toggle RE11
-    BUTTON_START_STOP_MCLV_Toggle();
+    BUTTON_FWD_REV_Toggle();
     </code>
 
 */
-#define BUTTON_START_STOP_MCLV_Toggle()           (_LATE11 ^= 1)
+#define BUTTON_FWD_REV_Toggle()           (_LATE11 ^= 1)
 /**
   @Summary
     Reads the value of the GPIO pin, RE11.
@@ -293,11 +731,11 @@
     uint16_t portValue;
 
     // Read RE11
-    postValue = BUTTON_START_STOP_MCLV_GetValue();
+    postValue = BUTTON_FWD_REV_GetValue();
     </code>
 
 */
-#define BUTTON_START_STOP_MCLV_GetValue()         _RE11
+#define BUTTON_FWD_REV_GetValue()         _RE11
 /**
   @Summary
     Configures the GPIO pin, RE11, as an input.
@@ -317,11 +755,11 @@
   @Example
     <code>
     // Sets the RE11 as an input
-    BUTTON_START_STOP_MCLV_SetDigitalInput();
+    BUTTON_FWD_REV_SetDigitalInput();
     </code>
 
 */
-#define BUTTON_START_STOP_MCLV_SetDigitalInput()  (_TRISE11 = 1)
+#define BUTTON_FWD_REV_SetDigitalInput()  (_TRISE11 = 1)
 /**
   @Summary
     Configures the GPIO pin, RE11, as an output.
@@ -341,11 +779,11 @@
   @Example
     <code>
     // Sets the RE11 as an output
-    BUTTON_START_STOP_MCLV_SetDigitalOutput();
+    BUTTON_FWD_REV_SetDigitalOutput();
     </code>
 
 */
-#define BUTTON_START_STOP_MCLV_SetDigitalOutput() (_TRISE11 = 0)
+#define BUTTON_FWD_REV_SetDigitalOutput() (_TRISE11 = 0)
 /**
   @Summary
     Sets the GPIO pin, RE12, high using LATE12.
@@ -365,11 +803,11 @@
   @Example
     <code>
     // Set RE12 high (1)
-    BUTTON_FWD_REV_SetHigh();
+    LED1_SetHigh();
     </code>
 
 */
-#define BUTTON_FWD_REV_SetHigh()          (_LATE12 = 1)
+#define LED1_SetHigh()          (_LATE12 = 1)
 /**
   @Summary
     Sets the GPIO pin, RE12, low using LATE12.
@@ -389,11 +827,11 @@
   @Example
     <code>
     // Set RE12 low (0)
-    BUTTON_FWD_REV_SetLow();
+    LED1_SetLow();
     </code>
 
 */
-#define BUTTON_FWD_REV_SetLow()           (_LATE12 = 0)
+#define LED1_SetLow()           (_LATE12 = 0)
 /**
   @Summary
     Toggles the GPIO pin, RE12, using LATE12.
@@ -413,11 +851,11 @@
   @Example
     <code>
     // Toggle RE12
-    BUTTON_FWD_REV_Toggle();
+    LED1_Toggle();
     </code>
 
 */
-#define BUTTON_FWD_REV_Toggle()           (_LATE12 ^= 1)
+#define LED1_Toggle()           (_LATE12 ^= 1)
 /**
   @Summary
     Reads the value of the GPIO pin, RE12.
@@ -439,11 +877,11 @@
     uint16_t portValue;
 
     // Read RE12
-    postValue = BUTTON_FWD_REV_GetValue();
+    postValue = LED1_GetValue();
     </code>
 
 */
-#define BUTTON_FWD_REV_GetValue()         _RE12
+#define LED1_GetValue()         _RE12
 /**
   @Summary
     Configures the GPIO pin, RE12, as an input.
@@ -463,11 +901,11 @@
   @Example
     <code>
     // Sets the RE12 as an input
-    BUTTON_FWD_REV_SetDigitalInput();
+    LED1_SetDigitalInput();
     </code>
 
 */
-#define BUTTON_FWD_REV_SetDigitalInput()  (_TRISE12 = 1)
+#define LED1_SetDigitalInput()  (_TRISE12 = 1)
 /**
   @Summary
     Configures the GPIO pin, RE12, as an output.
@@ -487,11 +925,157 @@
   @Example
     <code>
     // Sets the RE12 as an output
-    BUTTON_FWD_REV_SetDigitalOutput();
+    LED1_SetDigitalOutput();
     </code>
 
 */
-#define BUTTON_FWD_REV_SetDigitalOutput() (_TRISE12 = 0)
+#define LED1_SetDigitalOutput() (_TRISE12 = 0)
+/**
+  @Summary
+    Sets the GPIO pin, RE13, high using LATE13.
+
+  @Description
+    Sets the GPIO pin, RE13, high using LATE13.
+
+  @Preconditions
+    The RE13 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Set RE13 high (1)
+    LED2_SetHigh();
+    </code>
+
+*/
+#define LED2_SetHigh()          (_LATE13 = 1)
+/**
+  @Summary
+    Sets the GPIO pin, RE13, low using LATE13.
+
+  @Description
+    Sets the GPIO pin, RE13, low using LATE13.
+
+  @Preconditions
+    The RE13 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Set RE13 low (0)
+    LED2_SetLow();
+    </code>
+
+*/
+#define LED2_SetLow()           (_LATE13 = 0)
+/**
+  @Summary
+    Toggles the GPIO pin, RE13, using LATE13.
+
+  @Description
+    Toggles the GPIO pin, RE13, using LATE13.
+
+  @Preconditions
+    The RE13 must be set to an output.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Toggle RE13
+    LED2_Toggle();
+    </code>
+
+*/
+#define LED2_Toggle()           (_LATE13 ^= 1)
+/**
+  @Summary
+    Reads the value of the GPIO pin, RE13.
+
+  @Description
+    Reads the value of the GPIO pin, RE13.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    uint16_t portValue;
+
+    // Read RE13
+    postValue = LED2_GetValue();
+    </code>
+
+*/
+#define LED2_GetValue()         _RE13
+/**
+  @Summary
+    Configures the GPIO pin, RE13, as an input.
+
+  @Description
+    Configures the GPIO pin, RE13, as an input.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Sets the RE13 as an input
+    LED2_SetDigitalInput();
+    </code>
+
+*/
+#define LED2_SetDigitalInput()  (_TRISE13 = 1)
+/**
+  @Summary
+    Configures the GPIO pin, RE13, as an output.
+
+  @Description
+    Configures the GPIO pin, RE13, as an output.
+
+  @Preconditions
+    None.
+
+  @Returns
+    None.
+
+  @Param
+    None.
+
+  @Example
+    <code>
+    // Sets the RE13 as an output
+    LED2_SetDigitalOutput();
+    </code>
+
+*/
+#define LED2_SetDigitalOutput() (_TRISE13 = 0)
 /**
   @Summary
     Sets the GPIO pin, RE4, high using LATE4.
@@ -638,590 +1222,6 @@
 
 */
 #define STALL_INDICATOR_BIT_SetDigitalOutput() (_TRISE4 = 0)
-/**
-  @Summary
-    Sets the GPIO pin, RE6, high using LATE6.
-
-  @Description
-    Sets the GPIO pin, RE6, high using LATE6.
-
-  @Preconditions
-    The RE6 must be set to an output.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Set RE6 high (1)
-    LED1_SetHigh();
-    </code>
-
-*/
-#define LED1_SetHigh()          (_LATE6 = 1)
-/**
-  @Summary
-    Sets the GPIO pin, RE6, low using LATE6.
-
-  @Description
-    Sets the GPIO pin, RE6, low using LATE6.
-
-  @Preconditions
-    The RE6 must be set to an output.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Set RE6 low (0)
-    LED1_SetLow();
-    </code>
-
-*/
-#define LED1_SetLow()           (_LATE6 = 0)
-/**
-  @Summary
-    Toggles the GPIO pin, RE6, using LATE6.
-
-  @Description
-    Toggles the GPIO pin, RE6, using LATE6.
-
-  @Preconditions
-    The RE6 must be set to an output.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Toggle RE6
-    LED1_Toggle();
-    </code>
-
-*/
-#define LED1_Toggle()           (_LATE6 ^= 1)
-/**
-  @Summary
-    Reads the value of the GPIO pin, RE6.
-
-  @Description
-    Reads the value of the GPIO pin, RE6.
-
-  @Preconditions
-    None.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    uint16_t portValue;
-
-    // Read RE6
-    postValue = LED1_GetValue();
-    </code>
-
-*/
-#define LED1_GetValue()         _RE6
-/**
-  @Summary
-    Configures the GPIO pin, RE6, as an input.
-
-  @Description
-    Configures the GPIO pin, RE6, as an input.
-
-  @Preconditions
-    None.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Sets the RE6 as an input
-    LED1_SetDigitalInput();
-    </code>
-
-*/
-#define LED1_SetDigitalInput()  (_TRISE6 = 1)
-/**
-  @Summary
-    Configures the GPIO pin, RE6, as an output.
-
-  @Description
-    Configures the GPIO pin, RE6, as an output.
-
-  @Preconditions
-    None.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Sets the RE6 as an output
-    LED1_SetDigitalOutput();
-    </code>
-
-*/
-#define LED1_SetDigitalOutput() (_TRISE6 = 0)
-/**
-  @Summary
-    Sets the GPIO pin, RE7, high using LATE7.
-
-  @Description
-    Sets the GPIO pin, RE7, high using LATE7.
-
-  @Preconditions
-    The RE7 must be set to an output.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Set RE7 high (1)
-    LED2_SetHigh();
-    </code>
-
-*/
-#define LED2_SetHigh()          (_LATE7 = 1)
-/**
-  @Summary
-    Sets the GPIO pin, RE7, low using LATE7.
-
-  @Description
-    Sets the GPIO pin, RE7, low using LATE7.
-
-  @Preconditions
-    The RE7 must be set to an output.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Set RE7 low (0)
-    LED2_SetLow();
-    </code>
-
-*/
-#define LED2_SetLow()           (_LATE7 = 0)
-/**
-  @Summary
-    Toggles the GPIO pin, RE7, using LATE7.
-
-  @Description
-    Toggles the GPIO pin, RE7, using LATE7.
-
-  @Preconditions
-    The RE7 must be set to an output.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Toggle RE7
-    LED2_Toggle();
-    </code>
-
-*/
-#define LED2_Toggle()           (_LATE7 ^= 1)
-/**
-  @Summary
-    Reads the value of the GPIO pin, RE7.
-
-  @Description
-    Reads the value of the GPIO pin, RE7.
-
-  @Preconditions
-    None.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    uint16_t portValue;
-
-    // Read RE7
-    postValue = LED2_GetValue();
-    </code>
-
-*/
-#define LED2_GetValue()         _RE7
-/**
-  @Summary
-    Configures the GPIO pin, RE7, as an input.
-
-  @Description
-    Configures the GPIO pin, RE7, as an input.
-
-  @Preconditions
-    None.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Sets the RE7 as an input
-    LED2_SetDigitalInput();
-    </code>
-
-*/
-#define LED2_SetDigitalInput()  (_TRISE7 = 1)
-/**
-  @Summary
-    Configures the GPIO pin, RE7, as an output.
-
-  @Description
-    Configures the GPIO pin, RE7, as an output.
-
-  @Preconditions
-    None.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Sets the RE7 as an output
-    LED2_SetDigitalOutput();
-    </code>
-
-*/
-#define LED2_SetDigitalOutput() (_TRISE7 = 0)
-/**
-  @Summary
-    Sets the GPIO pin, RE8, high using LATE8.
-
-  @Description
-    Sets the GPIO pin, RE8, high using LATE8.
-
-  @Preconditions
-    The RE8 must be set to an output.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Set RE8 high (1)
-    HALLA_BIT_SetHigh();
-    </code>
-
-*/
-#define HALLA_BIT_SetHigh()          (_LATE8 = 1)
-/**
-  @Summary
-    Sets the GPIO pin, RE8, low using LATE8.
-
-  @Description
-    Sets the GPIO pin, RE8, low using LATE8.
-
-  @Preconditions
-    The RE8 must be set to an output.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Set RE8 low (0)
-    HALLA_BIT_SetLow();
-    </code>
-
-*/
-#define HALLA_BIT_SetLow()           (_LATE8 = 0)
-/**
-  @Summary
-    Toggles the GPIO pin, RE8, using LATE8.
-
-  @Description
-    Toggles the GPIO pin, RE8, using LATE8.
-
-  @Preconditions
-    The RE8 must be set to an output.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Toggle RE8
-    HALLA_BIT_Toggle();
-    </code>
-
-*/
-#define HALLA_BIT_Toggle()           (_LATE8 ^= 1)
-/**
-  @Summary
-    Reads the value of the GPIO pin, RE8.
-
-  @Description
-    Reads the value of the GPIO pin, RE8.
-
-  @Preconditions
-    None.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    uint16_t portValue;
-
-    // Read RE8
-    postValue = HALLA_BIT_GetValue();
-    </code>
-
-*/
-#define HALLA_BIT_GetValue()         _RE8
-/**
-  @Summary
-    Configures the GPIO pin, RE8, as an input.
-
-  @Description
-    Configures the GPIO pin, RE8, as an input.
-
-  @Preconditions
-    None.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Sets the RE8 as an input
-    HALLA_BIT_SetDigitalInput();
-    </code>
-
-*/
-#define HALLA_BIT_SetDigitalInput()  (_TRISE8 = 1)
-/**
-  @Summary
-    Configures the GPIO pin, RE8, as an output.
-
-  @Description
-    Configures the GPIO pin, RE8, as an output.
-
-  @Preconditions
-    None.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Sets the RE8 as an output
-    HALLA_BIT_SetDigitalOutput();
-    </code>
-
-*/
-#define HALLA_BIT_SetDigitalOutput() (_TRISE8 = 0)
-/**
-  @Summary
-    Sets the GPIO pin, RE9, high using LATE9.
-
-  @Description
-    Sets the GPIO pin, RE9, high using LATE9.
-
-  @Preconditions
-    The RE9 must be set to an output.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Set RE9 high (1)
-    HALLB_BIT_SetHigh();
-    </code>
-
-*/
-#define HALLB_BIT_SetHigh()          (_LATE9 = 1)
-/**
-  @Summary
-    Sets the GPIO pin, RE9, low using LATE9.
-
-  @Description
-    Sets the GPIO pin, RE9, low using LATE9.
-
-  @Preconditions
-    The RE9 must be set to an output.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Set RE9 low (0)
-    HALLB_BIT_SetLow();
-    </code>
-
-*/
-#define HALLB_BIT_SetLow()           (_LATE9 = 0)
-/**
-  @Summary
-    Toggles the GPIO pin, RE9, using LATE9.
-
-  @Description
-    Toggles the GPIO pin, RE9, using LATE9.
-
-  @Preconditions
-    The RE9 must be set to an output.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Toggle RE9
-    HALLB_BIT_Toggle();
-    </code>
-
-*/
-#define HALLB_BIT_Toggle()           (_LATE9 ^= 1)
-/**
-  @Summary
-    Reads the value of the GPIO pin, RE9.
-
-  @Description
-    Reads the value of the GPIO pin, RE9.
-
-  @Preconditions
-    None.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    uint16_t portValue;
-
-    // Read RE9
-    postValue = HALLB_BIT_GetValue();
-    </code>
-
-*/
-#define HALLB_BIT_GetValue()         _RE9
-/**
-  @Summary
-    Configures the GPIO pin, RE9, as an input.
-
-  @Description
-    Configures the GPIO pin, RE9, as an input.
-
-  @Preconditions
-    None.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Sets the RE9 as an input
-    HALLB_BIT_SetDigitalInput();
-    </code>
-
-*/
-#define HALLB_BIT_SetDigitalInput()  (_TRISE9 = 1)
-/**
-  @Summary
-    Configures the GPIO pin, RE9, as an output.
-
-  @Description
-    Configures the GPIO pin, RE9, as an output.
-
-  @Preconditions
-    None.
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    <code>
-    // Sets the RE9 as an output
-    HALLB_BIT_SetDigitalOutput();
-    </code>
-
-*/
-#define HALLB_BIT_SetDigitalOutput() (_TRISE9 = 0)
 
 /**
     Section: Function Prototypes
