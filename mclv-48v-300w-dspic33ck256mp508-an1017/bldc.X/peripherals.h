@@ -68,11 +68,11 @@
 
 /* Specify ADC Triggering Point w.r.t PWM Output for sensing Motor Currents */
 #define ADC_SAMPLING_POINT      (FCY/PWMFREQUENCY_HZ)-2     //4998
-#define ADCBUF_POT      ADCBUF11
-#define ADCBUF_IBUS     ADCBUF4
+#define ADCBUF_POT      ADCBUF17
+#define ADCBUF_IBUS     ADCBUF0
 #define PWM_PDC1  PG1DC
 #define PWM_PDC2  PG2DC
-#define PWM_PDC3  PG4DC
+#define PWM_PDC3  PG3DC
 
 inline static void PWM1_SwapOverrideEnableDataSet(uint16_t data)
 {
@@ -84,16 +84,16 @@ inline static void PWM2_SwapOverrideEnableDataSet(uint16_t data)
 }
 inline static void PWM4_SwapOverrideEnableDataSet(uint16_t data)
 {
-    PG4IOCONL = data & 0X7C00;
+    PG3IOCONL = data & 0X7C00;
 }
 inline static uint16_t PWM_MasterPeriodRead(void)
 {
     return MPER;
 }
 
-inline static void CN_PortEEnable(void){CNCONEbits.ON = 1;}
+inline static void CN_PortEEnable(void){CNCONDbits.ON = 1;}
 
-inline static void CN_PortEDisable(void){CNCONEbits.ON = 0;}
+inline static void CN_PortEDisable(void){CNCONDbits.ON = 0;}
 
 void CNE_ISR(void);
 void CN_Configure(void);
