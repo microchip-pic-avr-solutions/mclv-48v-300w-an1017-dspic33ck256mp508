@@ -100,152 +100,152 @@ void PWM_Initialize (void)
     PG1CONH = 0x6800;
     // MSTEN disabled; TRGMOD Single trigger mode; SOCS Trigger output selected by PG1 or PG5; UPDMOD Slaved SOC update; MPHSEL enabled; MPERSEL enabled; MDCSEL disabled; 
     PG2CONH = 0x6201;
-    // MSTEN disabled; TRGMOD Single trigger mode; SOCS Trigger output selected by PG1 or PG5; UPDMOD Slaved SOC update; MPHSEL disabled; MPERSEL enabled; MDCSEL disabled; 
-    PG4CONH = 0x4201;
+    // MSTEN disabled; TRGMOD Single trigger mode; SOCS Trigger output selected by PG1 or PG5; UPDMOD Slaved SOC update; MPHSEL enabled; MPERSEL enabled; MDCSEL disabled; 
+    PG3CONH = 0x6201;
     // TRSET disabled; UPDREQ disabled; CLEVT disabled; TRCLR disabled; CAP disabled; SEVT disabled; FFEVT disabled; UPDATE disabled; FLTEVT disabled; 
     PG1STAT = 0x00;
     // TRSET disabled; UPDREQ disabled; CLEVT disabled; TRCLR disabled; CAP disabled; SEVT disabled; FFEVT disabled; UPDATE disabled; FLTEVT disabled; 
     PG2STAT = 0x00;
     // TRSET disabled; UPDREQ disabled; CLEVT disabled; TRCLR disabled; CAP disabled; SEVT disabled; FFEVT disabled; UPDATE disabled; FLTEVT disabled; 
-    PG4STAT = 0x00;
+    PG3STAT = 0x00;
     // FLTDAT 0; DBDAT 0; SWAP disabled; OVRENH disabled; OVRENL disabled; OSYNC User output overrides are synchronized to the local PWM time base; CLMOD disabled; FFDAT 0; CLDAT 0; OVRDAT 0; 
     PG1IOCONL = 0x00;
     // FLTDAT 0; DBDAT 0; SWAP disabled; OVRENH disabled; OVRENL disabled; OSYNC User output overrides are synchronized to the local PWM time base; CLMOD disabled; FFDAT 0; CLDAT 0; OVRDAT 0; 
     PG2IOCONL = 0x00;
     // FLTDAT 0; DBDAT 0; SWAP disabled; OVRENH disabled; OVRENL disabled; OSYNC User output overrides are synchronized to the local PWM time base; CLMOD disabled; FFDAT 0; CLDAT 0; OVRDAT 0; 
-    PG4IOCONL = 0x00;
+    PG3IOCONL = 0x00;
     // PENL enabled; DTCMPSEL PCI Sync Logic; PMOD Complementary; POLL Active-high; PENH enabled; CAPSRC Software; POLH Active-high; 
     PG1IOCONH = 0x0C;
     // PENL enabled; DTCMPSEL PCI Sync Logic; PMOD Complementary; POLL Active-high; PENH enabled; CAPSRC Software; POLH Active-high; 
     PG2IOCONH = 0x0C;
     // PENL enabled; DTCMPSEL PCI Sync Logic; PMOD Complementary; POLL Active-high; PENH enabled; CAPSRC Software; POLH Active-high; 
-    PG4IOCONH = 0x0C;
+    PG3IOCONH = 0x0C;
     // UPDTRG Duty Cycle; ADTR1PS 1:1; PGTRGSEL EOC event; ADTR1EN3 disabled; ADTR1EN1 enabled; ADTR1EN2 disabled; 
     PG1EVTL = 0x108;
     // UPDTRG Manual; ADTR1PS 1:1; PGTRGSEL EOC event; ADTR1EN3 disabled; ADTR1EN1 enabled; ADTR1EN2 disabled; 
     PG2EVTL = 0x100;
-    // UPDTRG Manual; ADTR1PS 1:1; PGTRGSEL EOC event; ADTR1EN3 disabled; ADTR1EN1 enabled; ADTR1EN2 disabled; 
-    PG4EVTL = 0x100;
+    // UPDTRG Manual; ADTR1PS 1:1; PGTRGSEL EOC event; ADTR1EN3 disabled; ADTR1EN1 disabled; ADTR1EN2 disabled; 
+    PG3EVTL = 0x00;
     // ADTR2EN1 disabled; IEVTSEL EOC; SIEN disabled; FFIEN disabled; ADTR1OFS None; CLIEN disabled; FLTIEN disabled; ADTR2EN2 disabled; ADTR2EN3 disabled; 
     PG1EVTH = 0x00;
     // ADTR2EN1 disabled; IEVTSEL Time based interrupts disabled; SIEN disabled; FFIEN disabled; ADTR1OFS None; CLIEN disabled; FLTIEN disabled; ADTR2EN2 disabled; ADTR2EN3 disabled; 
     PG2EVTH = 0x300;
-    // ADTR2EN1 disabled; IEVTSEL EOC; SIEN disabled; FFIEN disabled; ADTR1OFS None; CLIEN disabled; FLTIEN disabled; ADTR2EN2 disabled; ADTR2EN3 disabled; 
-    PG4EVTH = 0x00;
+    // ADTR2EN1 disabled; IEVTSEL Time based interrupts disabled; SIEN disabled; FFIEN disabled; ADTR1OFS None; CLIEN disabled; FLTIEN disabled; ADTR2EN2 disabled; ADTR2EN3 disabled; 
+    PG3EVTH = 0x300;
     // PSS Device pin, PCI19; PPS Inverted; SWTERM disabled; PSYNC disabled; TERM Auto-Terminate; AQPS Not inverted; AQSS None; TSYNCDIS PWM EOC; 
     PG1FPCIL = 0x1033;
     // PSS Device pin, PCI19; PPS Inverted; SWTERM disabled; PSYNC disabled; TERM Auto-Terminate; AQPS Not inverted; AQSS None; TSYNCDIS PWM EOC; 
     PG2FPCIL = 0x1033;
-    // PSS Tied to 0; PPS Not inverted; SWTERM disabled; PSYNC disabled; TERM Manual Terminate; AQPS Not inverted; AQSS None; TSYNCDIS PWM EOC; 
-    PG4FPCIL = 0x00;
+    // PSS Device pin, PCI19; PPS Inverted; SWTERM disabled; PSYNC disabled; TERM Auto-Terminate; AQPS Not inverted; AQSS None; TSYNCDIS PWM EOC; 
+    PG3FPCIL = 0x1033;
     // TQPS Not inverted; LATMOD disabled; SWPCI Drives '0'; BPEN disabled; TQSS None; SWPCIM PCI acceptance logic; BPSEL PWM Generator 1; ACP Level-sensitive; 
     PG1FPCIH = 0x00;
     // TQPS Not inverted; LATMOD disabled; SWPCI Drives '0'; BPEN disabled; TQSS None; SWPCIM PCI acceptance logic; BPSEL PWM Generator 1; ACP Level-sensitive; 
     PG2FPCIH = 0x00;
     // TQPS Not inverted; LATMOD disabled; SWPCI Drives '0'; BPEN disabled; TQSS None; SWPCIM PCI acceptance logic; BPSEL PWM Generator 1; ACP Level-sensitive; 
-    PG4FPCIH = 0x00;
+    PG3FPCIH = 0x00;
     // PSS Tied to 0; PPS Not inverted; SWTERM disabled; PSYNC disabled; TERM Manual Terminate; AQPS Not inverted; AQSS None; TSYNCDIS PWM EOC; 
     PG1CLPCIL = 0x00;
     // PSS Tied to 0; PPS Not inverted; SWTERM disabled; PSYNC disabled; TERM Manual Terminate; AQPS Not inverted; AQSS None; TSYNCDIS PWM EOC; 
     PG2CLPCIL = 0x00;
     // PSS Tied to 0; PPS Not inverted; SWTERM disabled; PSYNC disabled; TERM Manual Terminate; AQPS Not inverted; AQSS None; TSYNCDIS PWM EOC; 
-    PG4CLPCIL = 0x00;
+    PG3CLPCIL = 0x00;
     // PCIGT disabled; TQPS Not inverted; SWPCI Drives '0'; BPEN disabled; TQSS None; SWPCIM PCI acceptance logic; BPSEL PWM Generator 1; ACP Level-sensitive; 
     PG1CLPCIH = 0x00;
     // PCIGT disabled; TQPS Not inverted; SWPCI Drives '0'; BPEN disabled; TQSS None; SWPCIM PCI acceptance logic; BPSEL PWM Generator 1; ACP Level-sensitive; 
     PG2CLPCIH = 0x00;
     // PCIGT disabled; TQPS Not inverted; SWPCI Drives '0'; BPEN disabled; TQSS None; SWPCIM PCI acceptance logic; BPSEL PWM Generator 1; ACP Level-sensitive; 
-    PG4CLPCIH = 0x00;
+    PG3CLPCIH = 0x00;
     // PSS Tied to 0; PPS Not inverted; SWTERM disabled; PSYNC disabled; TERM Manual Terminate; AQPS Not inverted; AQSS None; TSYNCDIS PWM EOC; 
     PG1FFPCIL = 0x00;
     // PSS Tied to 0; PPS Not inverted; SWTERM disabled; PSYNC disabled; TERM Manual Terminate; AQPS Not inverted; AQSS None; TSYNCDIS PWM EOC; 
     PG2FFPCIL = 0x00;
     // PSS Tied to 0; PPS Not inverted; SWTERM disabled; PSYNC disabled; TERM Manual Terminate; AQPS Not inverted; AQSS None; TSYNCDIS PWM EOC; 
-    PG4FFPCIL = 0x00;
+    PG3FFPCIL = 0x00;
     // PCIGT disabled; TQPS Not inverted; SWPCI Drives '0'; BPEN disabled; TQSS None; SWPCIM PCI acceptance logic; BPSEL PWM Generator 1; ACP Level-sensitive; 
     PG1FFPCIH = 0x00;
     // PCIGT disabled; TQPS Not inverted; SWPCI Drives '0'; BPEN disabled; TQSS None; SWPCIM PCI acceptance logic; BPSEL PWM Generator 1; ACP Level-sensitive; 
     PG2FFPCIH = 0x00;
     // PCIGT disabled; TQPS Not inverted; SWPCI Drives '0'; BPEN disabled; TQSS None; SWPCIM PCI acceptance logic; BPSEL PWM Generator 1; ACP Level-sensitive; 
-    PG4FFPCIH = 0x00;
+    PG3FFPCIH = 0x00;
     // PSS Tied to 0; PPS Not inverted; SWTERM disabled; PSYNC disabled; TERM Manual Terminate; AQPS Not inverted; AQSS None; TSYNCDIS PWM EOC; 
     PG1SPCIL = 0x00;
     // PSS Tied to 0; PPS Not inverted; SWTERM disabled; PSYNC disabled; TERM Manual Terminate; AQPS Not inverted; AQSS None; TSYNCDIS PWM EOC; 
     PG2SPCIL = 0x00;
     // PSS Tied to 0; PPS Not inverted; SWTERM disabled; PSYNC disabled; TERM Manual Terminate; AQPS Not inverted; AQSS None; TSYNCDIS PWM EOC; 
-    PG4SPCIL = 0x00;
+    PG3SPCIL = 0x00;
     // PCIGT disabled; TQPS Not inverted; SWPCI Drives '0'; BPEN disabled; TQSS None; SWPCIM PCI acceptance logic; BPSEL PWM Generator 1; ACP Level-sensitive; 
     PG1SPCIH = 0x00;
     // PCIGT disabled; TQPS Not inverted; SWPCI Drives '0'; BPEN disabled; TQSS None; SWPCIM PCI acceptance logic; BPSEL PWM Generator 1; ACP Level-sensitive; 
     PG2SPCIH = 0x00;
     // PCIGT disabled; TQPS Not inverted; SWPCI Drives '0'; BPEN disabled; TQSS None; SWPCIM PCI acceptance logic; BPSEL PWM Generator 1; ACP Level-sensitive; 
-    PG4SPCIH = 0x00;
+    PG3SPCIH = 0x00;
     // LEB 0; 
     PG1LEBL = 0x00;
     // LEB 0; 
     PG2LEBL = 0x00;
     // LEB 0; 
-    PG4LEBL = 0x00;
+    PG3LEBL = 0x00;
     // PWMPCI 1; PLR disabled; PLF disabled; PHR disabled; PHF disabled; 
     PG1LEBH = 0x00;
     // PWMPCI 1; PLR disabled; PLF disabled; PHR disabled; PHF disabled; 
     PG2LEBH = 0x00;
     // PWMPCI 1; PLR disabled; PLF disabled; PHR disabled; PHF disabled; 
-    PG4LEBH = 0x00;
+    PG3LEBH = 0x00;
     // PHASE 0; 
     PG1PHASE = 0x00;
     // PHASE 0; 
     PG2PHASE = 0x00;
     // PHASE 0; 
-    PG4PHASE = 0x00;
+    PG3PHASE = 0x00;
     // DC 0; 
     PG1DC = 0x00;
     // DC 0; 
     PG2DC = 0x00;
     // DC 0; 
-    PG4DC = 0x00;
+    PG3DC = 0x00;
     // DCA 0; 
     PG1DCA = 0x00;
     // DCA 0; 
     PG2DCA = 0x00;
     // DCA 0; 
-    PG4DCA = 0x00;
+    PG3DCA = 0x00;
     // PER 16; 
     PG1PER = 0x10;
     // PER 16; 
     PG2PER = 0x10;
     // PER 16; 
-    PG4PER = 0x10;
+    PG3PER = 0x10;
     // TRIGA 4998; 
     PG1TRIGA = 0x1386;
     // TRIGA 0; 
     PG2TRIGA = 0x00;
     // TRIGA 0; 
-    PG4TRIGA = 0x00;
+    PG3TRIGA = 0x00;
     // TRIGB 0; 
     PG1TRIGB = 0x00;
     // TRIGB 0; 
     PG2TRIGB = 0x00;
     // TRIGB 0; 
-    PG4TRIGB = 0x00;
+    PG3TRIGB = 0x00;
     // TRIGC 0; 
     PG1TRIGC = 0x00;
     // TRIGC 0; 
     PG2TRIGC = 0x00;
     // TRIGC 0; 
-    PG4TRIGC = 0x00;
+    PG3TRIGC = 0x00;
     // DTL 200; 
     PG1DTL = 0xC8;
     // DTL 200; 
     PG2DTL = 0xC8;
     // DTL 200; 
-    PG4DTL = 0xC8;
+    PG3DTL = 0xC8;
     // DTH 200; 
     PG1DTH = 0xC8;
     // DTH 200; 
     PG2DTH = 0xC8;
     // DTH 200; 
-    PG4DTH = 0xC8;
+    PG3DTH = 0xC8;
     
 
     // HREN disabled; MODSEL Center-Aligned; TRGCNT 1; CLKSEL Master clock; ON enabled; 
@@ -253,7 +253,7 @@ void PWM_Initialize (void)
     // HREN disabled; MODSEL Center-Aligned; TRGCNT 1; CLKSEL Master clock; ON enabled; 
     PG2CONL = 0x800C;
     // HREN disabled; MODSEL Center-Aligned; TRGCNT 1; CLKSEL Master clock; ON enabled; 
-    PG4CONL = 0x800C;
+    PG3CONL = 0x800C;
 }
 
 void __attribute__ ((weak)) PWM_Generator1_CallBack(void)
@@ -290,20 +290,20 @@ void PWM_Generator2_Tasks(void)
     }
 }
 
-void __attribute__ ((weak)) PWM_Generator4_CallBack(void)
+void __attribute__ ((weak)) PWM_Generator3_CallBack(void)
 {
     // Add Application code here
 }
 
-void PWM_Generator4_Tasks(void)
+void PWM_Generator3_Tasks(void)
 {
-    if(IFS4bits.PWM4IF)
+    if(IFS4bits.PWM3IF)
     {
-        // PWM Generator4 callback function 
-        PWM_Generator4_CallBack();
+        // PWM Generator3 callback function 
+        PWM_Generator3_CallBack();
 
-        // clear the PWM Generator4 interrupt flag
-        IFS4bits.PWM4IF = 0;
+        // clear the PWM Generator3 interrupt flag
+        IFS4bits.PWM3IF = 0;
     }
 }
 
