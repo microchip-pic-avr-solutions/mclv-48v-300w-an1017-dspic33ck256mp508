@@ -66,7 +66,7 @@
 
 /* GLOBAL DEFINES FOR FUNCTIONING MODE */
 /* undefine for negation */
-//#define PHASE_ADVANCE    // for extended speed ranges this should be defined    
+// #define PHASE_ADVANCE    // for extended speed ranges this should be defined    
 //#define OCDETECTION
 // *****************************************************************************
 // Section: Constants
@@ -78,9 +78,9 @@
 #define POLEPAIRS		    5      // Number of pole pairs    
 #define SECTOR              6      // Number of Electrical Sectors in Motor
 #ifdef PHASE_ADVANCE
-    #define MAX_MOTORSPEED  3800   // Specify the maximum speed in rpm of motor
+    #define MAX_MOTORSPEED  3000   // Specify the maximum speed in rpm of motor
 #else
-    #define MAX_MOTORSPEED  2800   // Specify the maximum speed in rpm of motor 
+    #define MAX_MOTORSPEED  2000   // Specify the maximum speed in rpm of motor 
 #endif
 #define MIN_OL_MOTORSPEED   300    // Specify the min openloop speed in rpm of motor
 #define MIN_CL_MOTORSPEED   1000    // Specify the min closedloop speed in rpm of motor
