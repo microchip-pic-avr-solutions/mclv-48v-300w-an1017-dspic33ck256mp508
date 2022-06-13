@@ -21,18 +21,18 @@ void ADC_Channel_Config(void)
     /* Common Interrupt Enable bits
        1 = Common and individual interrupts are enabled for analog channel
        0 = Common and individual interrupts are disabled for analog channel*/
-    _IE11        = 1 ;
+    _IE17       = 1 ;
     /* Clear ADC interrupt flag */
-    _ADCAN11IF    = 0 ;  
+    _ADCAN17IF    = 0 ;  
     /* Set ADC interrupt priority IPL 7  */ 
-    _ADCAN11IP   = 7 ;  
-    /* Disable the AN19 interrupt  */
-    _ADCAN11IE    = 1 ;  
+    _ADCAN17IP   = 7 ;  
+    /* Disable the AN17 interrupt  */
+    _ADCAN17IE    = 1 ;  
     
 }
 
-void __attribute__((interrupt, no_auto_psv)) _ADCAN11Interrupt() 
+void __attribute__((interrupt, no_auto_psv)) _ADCAN17Interrupt() 
 {
     ADC1_ISR();
-    IFS6bits.ADCAN11IF = 0;
+    IFS6bits.ADCAN17IF = 0;
 }
