@@ -142,10 +142,10 @@ void MCAPP_CheckHallUpdatePWM(void)
 
 void ADC1_ISR(void) 
 {
-    V_M1 = ADCBUF17; 
-    V_M2 = ADCBUF23;
-    V_M3 = ADCBUF22; 
-    busCurrent = ADCBUF4;
+    V_M1 = ADCBUF10; 
+    V_M2 = ADCBUF11;
+    V_M3 = ADCBUF12; 
+    busCurrent = ADCBUF0;
     DiagnosticsStepIsr();
     /**  Routine to read the potentiometer value and the bus current value */
     HAL_MC1MotorInputsRead(&mcappData.analogInputs);
@@ -527,11 +527,11 @@ void ChargeBootstrapCapacitors(void)
                 } 
                 else if (i == (BOOTSTRAP_CHARGING_COUNTS - 250)) 
                 {
-                    // 0 = PWM generator provides data for PWM4L pin
-                    PG4IOCONLbits.OVRENL = 0;
+                    // 0 = PWM generator provides data for PWM3L pin
+                    PG3IOCONLbits.OVRENL = 0;
                 }
                 if (k > 25) {
-                    if (PG4IOCONLbits.OVRENL == 0) 
+                    if (PG3IOCONLbits.OVRENL == 0) 
                     {
                         if (PWM_PDC3 > 2) 
                         {
@@ -575,7 +575,7 @@ void ChargeBootstrapCapacitors(void)
     PWM_PDC2 = 0;
     PWM_PDC1 = 0;
 
-    PG4IOCONLbits.OVRENH = 0; // 0 = PWM generator provides data for PWM4H pin
+    PG3IOCONLbits.OVRENH = 0; // 0 = PWM generator provides data for PWM3H pin
     PG2IOCONLbits.OVRENH = 0; // 0 = PWM generator provides data for PWM2H pin
     PG1IOCONLbits.OVRENH = 0; // 0 = PWM generator provides data for PWM1H pin
 }
