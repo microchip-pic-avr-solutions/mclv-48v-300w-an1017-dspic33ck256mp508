@@ -165,10 +165,10 @@ void ADC1_Initialize (void)
     ADTRIG1H = 0x00;
     //TRGSRC8 None; TRGSRC9 None; 
     ADTRIG2L = 0x00;
-    //TRGSRC11 PWM1 Trigger1; TRGSRC10 None; 
-    ADTRIG2H = 0x400;
-    //TRGSRC13 None; TRGSRC12 None; 
-    ADTRIG3L = 0x00;
+    //TRGSRC11 PWM1 Trigger1; TRGSRC10 PWM1 Trigger1; 
+    ADTRIG2H = 0x404;
+    //TRGSRC13 None; TRGSRC12 PWM1 Trigger1; 
+    ADTRIG3L = 0x04;
     //TRGSRC15 None; TRGSRC14 None; 
     ADTRIG3H = 0x00;
     //TRGSRC17 PWM1 Trigger1; TRGSRC16 None; 
@@ -177,8 +177,8 @@ void ADC1_Initialize (void)
     ADTRIG4H = 0x00;
     //TRGSRC20 None; TRGSRC21 None; 
     ADTRIG5L = 0x00;
-    //TRGSRC22 PWM1 Trigger1; TRGSRC23 PWM1 Trigger1; 
-    ADTRIG5H = 0x404;
+    //TRGSRC22 None; TRGSRC23 None; 
+    ADTRIG5H = 0x00;
     //TRGSRC24 None; TRGSRC25 None; 
     ADTRIG6L = 0x00;
 }
