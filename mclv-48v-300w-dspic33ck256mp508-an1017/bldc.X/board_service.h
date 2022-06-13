@@ -68,7 +68,7 @@
 // *****************************************************************************  
 #define PWM_PDC1      PG1DC
 #define PWM_PDC2      PG2DC
-#define PWM_PDC3      PG4DC
+#define PWM_PDC3      PG3DC
 
 /** Button De-bounce in milli Seconds */
 #define	BUTTON_DEBOUNCE_COUNT      10

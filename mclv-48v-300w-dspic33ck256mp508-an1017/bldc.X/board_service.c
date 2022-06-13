@@ -164,8 +164,8 @@ uint16_t HAL_HallValueRead(void)
     uint16_t buffer;
     uint16_t hallValue;
 
-    buffer = PORTE;
-    buffer = buffer >> 8;
+    buffer = PORTD;
+    buffer = buffer >> 5;
     hallValue = buffer & 0x0007;
     
     return hallValue;
@@ -180,11 +180,11 @@ void HAL_MC1PWMEnableOutputs(void)
 
     // Enable PWMs only on PWMxL ,to charge bootstrap capacitors initially.
     // Hence PWMxH is over-ridden to "LOW"
-    PG4IOCONLbits.OVRENH = 0; // 0 = PWM generator provides data for PWM4H pin
+    PG3IOCONLbits.OVRENH = 0; // 0 = PWM generator provides data for PWM3H pin
     PG2IOCONLbits.OVRENH = 0; // 0 = PWM generator provides data for PWM2H pin
     PG1IOCONLbits.OVRENH = 0; // 0 = PWM generator provides data for PWM1H pin
 
-    PG4IOCONLbits.OVRENL = 0; // 0 = PWM generator provides data for PWM4L pin
+    PG3IOCONLbits.OVRENL = 0; // 0 = PWM generator provides data for PWM3L pin
     PG2IOCONLbits.OVRENL = 0; // 0 = PWM generator provides data for PWM2L pin
     PG1IOCONLbits.OVRENL = 0; // 0 = PWM generator provides data for PWM1L pin
 }
@@ -196,15 +196,15 @@ void HAL_MC1PWMDisableOutputs(void)
     PWM_PDC2 = 0;
     PWM_PDC1 = 0;
 
-    PG4IOCONLbits.OVRDAT = 0; // 0b00 = State for PWM4H,L, if Override is Enabled
+    PG3IOCONLbits.OVRDAT = 0; // 0b00 = State for PWM3H,L, if Override is Enabled
     PG2IOCONLbits.OVRDAT = 0; // 0b00 = State for PWM2H,L, if Override is Enabled
     PG1IOCONLbits.OVRDAT = 0; // 0b00 = State for PWM1H,L, if Override is Enabled
 
-    PG4IOCONLbits.OVRENH = 1; // 1 = OVRDAT<1> provides data for output on PWM4H
+    PG3IOCONLbits.OVRENH = 1; // 1 = OVRDAT<1> provides data for output on PWM3H
     PG2IOCONLbits.OVRENH = 1; // 1 = OVRDAT<1> provides data for output on PWM2H
     PG1IOCONLbits.OVRENH = 1; // 1 = OVRDAT<1> provides data for output on PWM1H
 
-    PG4IOCONLbits.OVRENL = 1; // 1 = OVRDAT<0> provides data for output on PWM4L
+    PG3IOCONLbits.OVRENL = 1; // 1 = OVRDAT<0> provides data for output on PWM3L
     PG2IOCONLbits.OVRENL = 1; // 1 = OVRDAT<0> provides data for output on PWM2L
     PG1IOCONLbits.OVRENL = 1; // 1 = OVRDAT<0> provides data for output on PWM1L
 }
