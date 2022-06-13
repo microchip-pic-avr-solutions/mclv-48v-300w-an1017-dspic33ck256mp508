@@ -51,7 +51,7 @@ void CMP1_Initialize(void)
 	DACCTRL2L = 0x55; //TMODTIME 85; 
 	DACCTRL2H = 0x8A; //SSTIME 138; 
 	DAC1CONH = 0x00; //TMCB 0; 
-	DAC1CONL = 0xA010; //CMPPOL Non Inverted; HYSPOL Rising Edge; HYSSEL None; DACEN enabled; FLTREN disabled; CBE disabled; IRQM Rising edge detect; INSEL CMP1C; DACOEN disabled; 
+	DAC1CONL = 0xA000; //CMPPOL Non Inverted; HYSPOL Rising Edge; HYSSEL None; DACEN enabled; FLTREN disabled; CBE disabled; IRQM Rising edge detect; INSEL CMP1A; DACOEN disabled; 
 
 	//Slope Settings
 	SLP1CONH = 0x00; //HME disabled; PSE Negative; SLOPEN disabled; TWME disabled; 
