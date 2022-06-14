@@ -50,7 +50,7 @@ To clone or download this application from Github, go to the [main page of this 
 
 3. <p style='text-align: justify;'>Connect the hall sensors from the motor to HA, HB and HC terminals of connector J5, provided on the MCLV-48V-300W Inverter Board as mentioned in the below table. </p>
 
-    |MCLV2 Board|	Hurst075 Motor||
+    |MCLV Board|	Hurst075 Motor||
     |:---:|:----------------------:|:----------------------:|
     ||Hall Terminals(Color as per image above)|	Molex 50-57-9408 (Mating Connector)|
      |5V|	Red|	1|
@@ -116,7 +116,7 @@ The Motor Control Demo application uses push button to start or stop the motor a
 
 <p style='text-align: justify;'>
 
-For more details refer Microchip Application note AN1078 “Sensorless Field Oriented Control of a PMSM” available at [Microchip web site](https://www.microchip.com/). </p>
+For more details refer Microchip Application note AN1017“Sinusoidal Control of PMSM Motors”  available at [Microchip web site](https://www.microchip.com/). </p>
 
 > **_NOTE:_**
 > The project may not build correctly in Windows OS if Maximum path length of any source file in the project is more than 260 characters. In case absolute path is exceeding or nearing maximum length, do any (or both) of the following:
@@ -138,7 +138,7 @@ Follow below instructions step by step to setup and run the motor control demo a
 
 3.  <p style='text-align: leftjustify;'> Open <span style="font-family:Courier New; font-size:;">bldc_main.h </span>(under<span style="font-family:Courier New; font-size:;"> bldc.X -> headerfiles)</span> in the project <span style="font-family:Courier New; font-size:;">bldc.X</span> </p>
      <p style='text-align: leftjustify;'>
-- Ensure that <span style="font-family:Courier New; font-size:;"> OPENLOOP</span>is not defined.
+- Ensure that <span style="font-family:Courier New; font-size:;"> OPENLOOP</span> is not defined.
       <p align="left"><img  src="images/projectopenloopsetup.png"></p>
 - Comment out the <span style="font-family:Courier New; font-size:;"> #define PHASE_ADVANCE </span>for above base speed applications
         <p align="left"> <img  src="images/projectphase advancesetup.png"></p>
@@ -160,7 +160,7 @@ Follow below instructions step by step to setup and run the motor control demo a
       <p align="left">
       <img  src="images/loadvariables.png"></p>
 
-6. <p style='text-align: justify;'>	 To build the project (in this case pmsm.X) and program the device dsPIC33CK256MP508, click <b>“Make and Program Device Main project”</b> on the toolbar.</p>
+6. <p style='text-align: justify;'>	 To build the project (in this case bldc.X) and program the device dsPIC33CK256MP508, click <b>“Make and Program Device Main project”</b> on the toolbar.</p>
     <p align="left">
     <img  src="images/deviceprogramming.png"></p>
   
@@ -207,7 +207,7 @@ Follow below instructions step by step to setup and run the motor control demo a
        <img  src="images/x2cselection.png"></p>
  
 
-5. Open the X2C-Scope Configuration window and in <b>“Select project”</b> menu, select <b>pmsm</b> project as shown.
+5. Open the X2C-Scope Configuration window and in <b>“Select project”</b> menu, select <b>bldc</b> project as shown.
     <p align="left">
     <img  src="images/x2cprojectselection.png"></p>
 
@@ -234,7 +234,7 @@ Follow below instructions step by step to setup and run the motor control demo a
     	     
 
 10. In this window, select the variables that needs to be monitored. To do this, click on the source against each channel, a window Select Variables opens upon the screen. From the available list, the required variable can be chosen. Ensure check boxes Enable & Visible are checked for the variables to be plotted.<br>
-To view data plots continuously, uncheck<span style="font-family:Courier New; font-size:1;"> Single-shot</span>. When <span style="font-family:Courier New; font-size:1;">Single-shot</span> is checked it captures the data once and stops. The Sample time factor value multiplied with Sample time determines the time difference between any two consecutive data points on the plot.
+To view data plots continuously, uncheck<span style="font-family:Courier New; font-size:;"> Single-shot</span>. When <span style="font-family:Courier New; font-size:;">Single-shot</span> is checked it captures the data once and stops. The Sample time factor value multiplied with Sample time determines the time difference between any two consecutive data points on the plot.
     <p align="left">
     <img  src="images/x2cdatapointselection.png"></p>
 
@@ -258,10 +258,7 @@ For additional information, refer following documents or links.
 7. [MPLAB® X IDE installation](http://microchipdeveloper.com/mplabx:installation)
 8. [MPLAB® XC16 Compiler installation](http://microchipdeveloper.com/xc16:installation)
 
-## Setup
 
-
-## Operation
 
 
 
