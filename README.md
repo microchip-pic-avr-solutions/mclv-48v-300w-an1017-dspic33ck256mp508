@@ -38,7 +38,7 @@ To clone or download this application from Github, go to the [main page of this 
    <p align="left">
     <img  src="images/dimconnected.PNG"></p>
 
-2. <p style='text-align: justify;'> Connect the three phase wires from the motor to PHA, PHB & PHC terminals of connector J14, provided on the MCLV-48V-300W Inverter Board. as mentioned in the below table. </p>
+2. <p style='text-align: justify;'> Connect the three phase wires from the motor to PHA, PHB & PHC terminals of connector J4, provided on the MCLV-48V-300W Inverter Board. as mentioned in the below table. </p>
 
    | MCLV Board|Hurst075 Motor| |
    | :--------:| :-----------:|:--:|
@@ -54,11 +54,11 @@ To clone or download this application from Github, go to the [main page of this 
     |MCLV Board|	Hurst075 Motor||
     |:---:|:----------------------:|:----------------------:|
     ||Hall Terminals(Color as per image above)|	Molex 50-57-9408 (Mating Connector)|
-     |5V|	Red|	1|
-     |GND|	Black|	2|
-     |HA	| White	|4|
-     |HB	|Brown|	3|
-     |HC|	Green|	5|
+     |5V|	Red|	6|
+     |GND|	Black|	4|
+     |HA	| White	|3|
+     |HB	|Brown|	2|
+     |HC|	Green|	1|
   
     <p align="left">
        <img  src="images/hallsensorconnection.png"></p>
