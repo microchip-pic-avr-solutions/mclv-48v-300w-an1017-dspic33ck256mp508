@@ -46,7 +46,8 @@ To clone or download this application from Github, go to the [main page of this 
     | PHC   | Red   | 1|
     | PHB   | Black | 2|
     | PHA   | White | 3|
-
+    <p align="left">
+       <img  src="images/motorconnection.png"></p>
 
 3. <p style='text-align: justify;'>Connect the hall sensors from the motor to HA, HB and HC terminals of connector J5, provided on the MCLV-48V-300W Inverter Board as mentioned in the below table. </p>
 
@@ -59,10 +60,10 @@ To clone or download this application from Github, go to the [main page of this 
      |HB	|Brown|	3|
      |HC|	Green|	5|
   
+    <p align="left">
+       <img  src="images/hallsensorconnection.png"></p>
 
-
-     <p align="left">
-       <img  src="images/motorconnection.png"></p>
+    
 
 4.  <p style='text-align: justify;'>	Plug in the 24V power supply to connector J1 provided on the MCLV-48V-300W Inverter Board. Alternatively, the Inverter Board can also be powered through Connector J3.</p>
       <p align="left">
