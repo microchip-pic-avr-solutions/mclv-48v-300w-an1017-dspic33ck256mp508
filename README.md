@@ -141,7 +141,7 @@ Follow below instructions step by step to setup and run the motor control demo a
      <p style='text-align: leftjustify;'>
 - Ensure that <span style="font-family:Courier New; font-size:;"> OPENLOOP</span> is not defined.
       <p align="left"><img  src="images/projectopenloopsetup.png"></p>
-- Comment out the <span style="font-family:Courier New; font-size:;"> #define PHASE_ADVANCE </span>for above base speed applications
+- Undefine<span style="font-family:Courier New; font-size:;"> PHASE_ADVANCE </span>for below base speed applications
         <p align="left"> <img  src="images/projectphase advancesetup.png"></p>
 4. Right click on the project <i>bldc.X</i> and select “Properties”  to open its Project Properties Dialog.Click the “Conf: [default]” category to reveal the general project configuration information. The development tools used for testing the firmware are listed in the section [2.2 Software Tools Used for Testing the firmware](#22-software-tools-used-for-testing-the-firmware).
    <p style='text-align: justify;'>

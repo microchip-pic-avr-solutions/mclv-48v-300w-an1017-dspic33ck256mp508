@@ -66,7 +66,9 @@
 
 /* GLOBAL DEFINES FOR FUNCTIONING MODE */
 /* undefine for negation */
-// #define PHASE_ADVANCE    // for extended speed ranges this should be defined    
+ #undef PHASE_ADVANCE    // for extended speed ranges this should be defined  
+
+
 //#define OCDETECTION
 // *****************************************************************************
 // Section: Constants
