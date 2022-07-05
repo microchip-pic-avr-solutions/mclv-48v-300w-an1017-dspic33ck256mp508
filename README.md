@@ -53,7 +53,7 @@ To clone or download this application from Github, go to the [main page of this 
 
     |MCLV Board  <br> (J5 connector)|	Hurst075 Motor|
     |:---:|:----------------------:|
-    ||Hall Terminals(Color as per image above)|	
+    ||Hall Terminals(Color as per image above)
      |5V|	Red
      |GND|	Black	
      |HA	| White	
