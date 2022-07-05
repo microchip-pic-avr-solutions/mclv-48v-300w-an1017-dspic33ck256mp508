@@ -250,7 +250,7 @@ To view data plots continuously, uncheck<span style="font-family:Courier New; fo
  
  ## 6. REFERENCES:
 For additional information, refer following documents or links.
-1. AN1017 Application Note [“Sinusoidal Control of PMSM Motors with dsPIC30F / dsPIC33F/ dsPIC33E DSC”]()
+1. AN1017 Application Note [“Sinusoidal Control of PMSM Motors with dsPIC30F / dsPIC33F/ dsPIC33E DSC”](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ApplicationNotes/ApplicationNotes/01017a.pdf)
 2. AN957 Application Note [“Sensored BLDC Motor Control Using dsPIC30F2010”](https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ApplicationNotes/ApplicationNotes/BLDCMC00957a.pdf)
 3. MCLV-48V-300W Inverter Board User’s Guide 
 4. dsPIC33CK256MP508 Family datasheet ([DS70005349](https://ww1.microchip.com/downloads/en/DeviceDoc/dsPIC33CK256MP508-Family-Data-Sheet-DS70005349H.pdf)).
