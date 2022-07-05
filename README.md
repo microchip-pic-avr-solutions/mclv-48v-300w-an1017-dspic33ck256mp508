@@ -10,7 +10,7 @@ This document describes the setup requirements for running the Sensored BLDC/PMS
 ## 2.	SUGGESTED DEMONSTRATION REQUIREMENTS
 
 ### 2.1 Motor Control Application Firmware Required for the Demonstration
-To clone or download this application from Github, go to the [main page of this repository](https://github.com/microchip-pic-avr-solutions/mclv-48v-300w-an1017) and then click Clone button to clone this repository or download as zip file.
+To clone or download this application from Github, go to the [main page of this repository](https://github.com/microchip-pic-avr-solutions/mclv-48v-300w-an1017-dsPIC33CK256MP508 ) and then click Clone button to clone this repository or download as zip file.
 > **_NOTE:_**
 >In this document, hereinafter this firmware package is referred as firmware.
 ### 2.2 Software Tools Used for Testing the firmware
